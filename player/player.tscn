@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://do7tf4v7i7ttr"]
+
+[ext_resource type="Script" path="res://scripts/camera/camera_fp.gd" id="1_a4mqt"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tjbal"]
+height = 1.8234
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_a4mqt")
+move_speed = 300.0
+look_speed = 2.0
+jump_height = 2.0
+jump_time_to_peak = 0.4
+jump_time_to_descent = 0.6
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.917618, 0)
+shape = SubResource("CapsuleShape3D_tjbal")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49317, 0)
