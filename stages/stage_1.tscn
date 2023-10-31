@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctwwakv0ktxi1"]
+[gd_scene load_steps=15 format=3 uid="uid://ctwwakv0ktxi1"]
 
 [ext_resource type="Script" path="res://scripts/game/stage.gd" id="1_7vggu"]
 [ext_resource type="PackedScene" uid="uid://do7tf4v7i7ttr" path="res://player/player.tscn" id="1_dc1oe"]
@@ -6,7 +6,28 @@
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_convex_block.gd" id="3_p7e6o"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="4_6sbf3"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ahd0v"]
+sky_top_color = Color(0.427451, 0.313726, 0.215686, 1)
+sky_horizon_color = Color(0.462745, 0.470588, 0.486275, 1)
+ground_bottom_color = Color(0.14902, 0.168627, 0.258824, 1)
+ground_horizon_color = Color(0.462745, 0.470588, 0.486275, 1)
+sun_angle_max = 17.75
+sun_curve = 3.30048e-05
+
+[sub_resource type="Sky" id="Sky_sqoew"]
+sky_material = SubResource("ProceduralSkyMaterial_ahd0v")
+
 [sub_resource type="Environment" id="Environment_6y66v"]
+background_mode = 2
+background_energy_multiplier = 0.25
+sky = SubResource("Sky_sqoew")
+sdfgi_enabled = true
+fog_enabled = true
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 0.0355
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.096
+volumetric_fog_albedo = Color(0.231373, 0.356863, 0.47451, 1)
 
 [sub_resource type="Resource" id="Resource_3jttr"]
 script = ExtResource("4_6sbf3")
@@ -14,6 +35,106 @@ selected = false
 active = false
 collsion = true
 vertex_points = PackedVector3Array(-182, -3, -121, -182, -3, 4, -182, -5, 4, -182, -5, -121, -6, -3, -121, -6, -3, 4, -6, -5, 4, -6, -5, -121)
+vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+active_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
+edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+active_edge = -1
+edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+face_material_indices = PackedInt32Array(-1, -1, -1, -1, -1, -1)
+face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
+active_face = -1
+face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+
+[sub_resource type="Resource" id="Resource_wvlio"]
+script = ExtResource("4_6sbf3")
+selected = false
+active = false
+collsion = true
+vertex_points = PackedVector3Array(-182, 11, -121, -182, 11, 4, -182, -3, 4, -182, -3, -121, -180, 11, -121, -180, 11, 4, -180, -3, 4, -180, -3, -121)
+vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+active_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
+edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+active_edge = -1
+edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+face_material_indices = PackedInt32Array(-1, -1, -1, -1, -1, -1)
+face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
+active_face = -1
+face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+
+[sub_resource type="Resource" id="Resource_y5sh4"]
+script = ExtResource("4_6sbf3")
+selected = false
+active = false
+collsion = true
+vertex_points = PackedVector3Array(-180, 11, 2, -180, 11, 4, -180, -3, 4, -180, -3, 2, -6, 11, 2, -6, 11, 4, -6, -3, 4, -6, -3, 2)
+vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+active_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
+edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+active_edge = -1
+edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+face_material_indices = PackedInt32Array(-1, -1, -1, -1, -1, -1)
+face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
+active_face = -1
+face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+
+[sub_resource type="Resource" id="Resource_k7qbn"]
+script = ExtResource("4_6sbf3")
+selected = false
+active = false
+collsion = true
+vertex_points = PackedVector3Array(-180, 11, -121, -180, 11, -119, -180, -3, -119, -180, -3, -121, -6, 11, -121, -6, 11, -119, -6, -3, -119, -6, -3, -121)
+vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+active_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
+edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+active_edge = -1
+edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+face_material_indices = PackedInt32Array(-1, -1, -1, -1, -1, -1)
+face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
+active_face = -1
+face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+
+[sub_resource type="Resource" id="Resource_g0snr"]
+script = ExtResource("4_6sbf3")
+selected = false
+active = false
+collsion = true
+vertex_points = PackedVector3Array(-9, 11, -119, -9, 11, -63, -9, -3, -63, -9, -3, -119, -6, 11, -119, -6, 11, -63, -6, -3, -63, -6, -3, -119)
+vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+active_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
+edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+active_edge = -1
+edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+face_material_indices = PackedInt32Array(-1, -1, -1, -1, -1, -1)
+face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
+active_face = -1
+face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+
+[sub_resource type="Resource" id="Resource_u5umi"]
+script = ExtResource("4_6sbf3")
+selected = false
+active = false
+collsion = true
+vertex_points = PackedVector3Array(-9, 11, -48, -9, 11, 2, -9, -3, 2, -9, -3, -48, -6, 11, -48, -6, 11, 2, -6, -3, 2, -6, -3, -48)
 vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
 active_vertex = -1
 edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
@@ -36,6 +157,12 @@ environment = SubResource("Environment_6y66v")
 
 [node name="Player" parent="." instance=ExtResource("1_dc1oe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.7653, 0, -45.9136)
+move_speed = 500.0
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.87341, 1.31243, 0)
+light_color = Color(0.827451, 0.733333, 0.509804, 1)
+omni_range = 12.947
 
 [node name="CyclopsBlocks" type="Node3D" parent="."]
 script = ExtResource("2_fruh8")
@@ -43,3 +170,41 @@ script = ExtResource("2_fruh8")
 [node name="Block_0" type="Node" parent="CyclopsBlocks"]
 script = ExtResource("3_p7e6o")
 block_data = SubResource("Resource_3jttr")
+
+[node name="Block_1" type="Node" parent="CyclopsBlocks"]
+script = ExtResource("3_p7e6o")
+block_data = SubResource("Resource_wvlio")
+
+[node name="Block_2" type="Node" parent="CyclopsBlocks"]
+script = ExtResource("3_p7e6o")
+block_data = SubResource("Resource_y5sh4")
+
+[node name="Block_3" type="Node" parent="CyclopsBlocks"]
+script = ExtResource("3_p7e6o")
+block_data = SubResource("Resource_k7qbn")
+
+[node name="Block_4" type="Node" parent="CyclopsBlocks"]
+script = ExtResource("3_p7e6o")
+block_data = SubResource("Resource_g0snr")
+
+[node name="Block_5" type="Node" parent="CyclopsBlocks"]
+script = ExtResource("3_p7e6o")
+block_data = SubResource("Resource_u5umi")
+
+[node name="Lights" type="Node3D" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Lights"]
+transform = Transform3D(0.875591, -1.30473e-08, -0.483053, 0.417389, 0.503382, 0.756567, 0.24316, -0.864064, 0.440757, 0, 2.71403, 0)
+light_energy = 0.0
+shadow_enabled = true
+directional_shadow_max_distance = 350.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5882, 0, -44.7213)
+light_color = Color(0.827451, 0.733333, 0.509804, 1)
+omni_range = 12.947
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5882, 0, -67.7213)
+light_color = Color(0.827451, 0.733333, 0.509804, 1)
+omni_range = 12.947
