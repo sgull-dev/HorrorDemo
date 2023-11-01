@@ -19,3 +19,10 @@ shape = SubResource("CapsuleShape3D_tjbal")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49317, 0)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6142, 0)
+light_color = Color(0.823529, 0.819608, 0.568627, 1)
+light_energy = 5.443
+spot_range = 20.4334
+spot_angle = 19.9046

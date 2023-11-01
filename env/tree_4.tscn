@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqin0bc4gx43p"]
+
+[ext_resource type="PackedScene" uid="uid://db1jqp77uod60" path="res://assets/env/trees/dead_2.glb" id="1_11uum"]
+
+[node name="Tree" type="Node3D"]
+
+[node name="dead_2" parent="." instance=ExtResource("1_11uum")]

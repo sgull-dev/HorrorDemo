@@ -1,6 +1,14 @@
+res://stages/stage_1.tscn
 res://addons/cyclops_level_builder/shaders/outline_shader.tres
 res://addons/cyclops_level_builder/docks/material_palette/thumbnail_selected_theme.tres
 res://addons/cyclops_level_builder/docks/material_palette/thumbnail_normal_theme.tres
+res://mat/ground.tres
+res://mat/brick.tres
+res://mat/gobble.tres
 res://player/player.tscn
-res://stages/stage_1.tscn
-res://scripts/camera/camera_fp.gd
+res://env/tree_1.tscn
+res://env/tree_2.tscn
+res://env/tree_3.tscn
+res://env/tree_4.tscn
+res://env/bg/tentacle.tscn
+res://env/bg/tentacle.gd

@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxuy81cx1312s"]
+
+[ext_resource type="Script" path="res://env/bg/tentacle.gd" id="1_7bruo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3lpr"]
+albedo_color = Color(0.235294, 0.282353, 0.537255, 1)
+
+[sub_resource type="Animation" id="Animation_ih32y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.356833, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mn6qp"]
+resource_name = "Tent"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.356833, 0, 0), Vector3(-0.18408, 0, 0), Vector3(-0.356833, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_356ac"]
+_data = {
+"RESET": SubResource("Animation_ih32y"),
+"Tent": SubResource("Animation_mn6qp")
+}
+
+[node name="Tentacle" type="CSGCylinder3D"]
+transform = Transform3D(1, 0, 0, 0, 0.937008, 0.349308, 0, -0.349308, 0.937008, 0, 0, 0)
+cast_shadow = 0
+radius = 1.95
+height = 86.822
+material = SubResource("StandardMaterial3D_e3lpr")
+script = ExtResource("1_7bruo")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_356ac")
+}

@@ -1,8 +1,13 @@
-OmniLight3D
+AnimationPlayer
+AnimationTree
+CSGCylinder3D
 Node3D
+CollisionShape3D
+StaticBody3D
+SpotLight3D
+OmniLight3D
 DirectionalLight3D
 CyclopsBlocks
 Camera3D
-CollisionShape3D
 CharacterBody3D
 WorldEnvironment
