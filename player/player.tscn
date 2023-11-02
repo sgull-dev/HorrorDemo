@@ -1,13 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://do7tf4v7i7ttr"]
+[gd_scene load_steps=4 format=3 uid="uid://do7tf4v7i7ttr"]
 
 [ext_resource type="Script" path="res://scripts/camera/camera_fp.gd" id="1_a4mqt"]
+[ext_resource type="Script" path="res://player/player_stats.gd" id="2_og1fs"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tjbal"]
 height = 1.8234
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_a4mqt")
-move_speed = 300.0
+move_speed = 200.0
 look_speed = 2.0
 jump_height = 2.0
 jump_time_to_peak = 0.4
@@ -26,3 +27,8 @@ light_color = Color(0.823529, 0.819608, 0.568627, 1)
 light_energy = 5.443
 spot_range = 20.4334
 spot_angle = 19.9046
+
+[node name="PlayerStats" type="Node" parent="."]
+script = ExtResource("2_og1fs")
+stamina_gain = 10.0
+stamina_run_drain = 1.2

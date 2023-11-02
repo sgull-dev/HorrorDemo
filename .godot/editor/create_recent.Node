@@ -1,7 +1,11 @@
+ProgressBar
+Control
+CanvasLayer
+Node
+Node3D
 AnimationPlayer
 AnimationTree
 CSGCylinder3D
-Node3D
 CollisionShape3D
 StaticBody3D
 SpotLight3D

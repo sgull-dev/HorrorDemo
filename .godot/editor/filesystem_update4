@@ -11,4 +11,7 @@ res://env/tree_2.tscn
 res://env/tree_3.tscn
 res://env/tree_4.tscn
 res://env/bg/tentacle.tscn
-res://env/bg/tentacle.gd
+res://player/player_stats.gd
+res://scripts/camera/camera_fp.gd
+res://ui/hud.tscn
+res://ui/StaminaBar.gd

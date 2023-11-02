@@ -8,7 +8,6 @@
 [resource]
 albedo_texture = ExtResource("1_l8g5u")
 roughness_texture = ExtResource("4_ubn6y")
-normal_enabled = true
 normal_scale = -1.0
 normal_texture = ExtResource("3_ht2i2")
 ao_enabled = true
