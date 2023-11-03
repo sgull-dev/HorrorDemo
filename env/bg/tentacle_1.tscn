@@ -1,6 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmppxseq8th7q"]
+[gd_scene load_steps=18 format=3 uid="uid://dmppxseq8th7q"]
 
+[ext_resource type="Script" path="res://env/bg/tentacle_2.gd" id="1_6gkqw"]
 [ext_resource type="Texture2D" uid="uid://c545olp4kosty" path="res://assets/bg/tentacle_1_bg_tentacle_2.png" id="1_o6gg2"]
+[ext_resource type="Script" path="res://addons/wigglebone/wiggle_bone.gd" id="2_8ugu5"]
+[ext_resource type="Script" path="res://addons/wigglebone/wiggle_properties.gd" id="3_u8jmn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a3i18"]
 resource_name = "Tentacle1"
@@ -68,26 +71,199 @@ bind/10/pose = Transform3D(-0.0138872, 0.999883, 0.00640353, -0.999903, -0.01388
 transparency = 1
 albedo_texture = ExtResource("1_o6gg2")
 billboard_mode = 2
+billboard_keep_scale = true
+
+[sub_resource type="Resource" id="Resource_etnol"]
+script = ExtResource("3_u8jmn")
+mode = 0
+stiffness = 0.61
+damping = 0.72
+gravity = Vector3(0, 0, 0)
+length = 0.85
+max_distance = 1.45
+max_degrees = 60.0
+
+[sub_resource type="Resource" id="Resource_3t6h7"]
+script = ExtResource("3_u8jmn")
+mode = 0
+stiffness = 0.35
+damping = 0.54
+gravity = Vector3(0, 0, 0)
+length = 0.85
+max_distance = 0.9
+max_degrees = 60.0
+
+[sub_resource type="Resource" id="Resource_ie5np"]
+script = ExtResource("3_u8jmn")
+mode = 0
+stiffness = 0.87
+damping = 0.72
+gravity = Vector3(0, 0, 0)
+length = 0.55
+max_distance = 0.9
+max_degrees = 60.0
+
+[sub_resource type="Animation" id="Animation_x3723"]
+resource_name = "Wiggle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("tentacle_1/metarig/Skeleton3D:rotation")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.207395, 2.67768, 0.390424)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tentacle_1/metarig:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 2.34747, 0), Vector3(-0.680894, 2.69531, -0.920862), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_8banf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("tentacle_1/metarig/Skeleton3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tentacle_1/metarig:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "rotation_3d"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("tentacle_1/metarig/Skeleton3D:spine")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 0.000474975, 0.000474975, 0.000474975, 1.00048)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("tentacle_1/metarig/Skeleton3D:spine.008")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 3.70589e-05, -6.67882e-07, 0.0307632, 0.999527)
+tracks/4/type = "rotation_3d"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("tentacle_1/metarig/Skeleton3D:spine.009")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, -9.25831e-06, 2.38487e-07, 0.0679054, 0.997692)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("tentacle_1/metarig/Skeleton3D:spine.007")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0.00316989, -1.33029e-05, 0.445775, 0.895139)
+
+[sub_resource type="Animation" id="Animation_6l01w"]
+resource_name = "Wiggle2"
+length = 5.0
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("tentacle_1/metarig/Skeleton3D:spine")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.000474975, 0.000474975, 0.000474975, 1.00048, 0.5, 1, 0.000474975, 0.000474975, 0.101475, 0.994475, 1.9, 1, 0.000474975, 0.000474975, -0.120525, 0.992475, 5, 1, 0.000474975, 0.000474975, 0.000474975, 1.00048)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tentacle_1/metarig/Skeleton3D:spine.008")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 3.70589e-05, -6.67882e-07, 0.0307632, 0.999527, 1.9, 1, 3.70589e-05, -6.67882e-07, 0.0307632, 0.999527, 2.7, 1, 3.70589e-05, -6.67882e-07, 0.0307632, 0.999527, 5, 1, 3.70589e-05, -6.67882e-07, 0.0307632, 0.999527)
+
+[sub_resource type="Animation" id="Animation_3faob"]
+resource_name = "Wiggle3"
+length = 8.0
+loop_mode = 1
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("tentacle_1/metarig/Skeleton3D:spine.009")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -9.25831e-06, 2.38487e-07, 0.0679054, 0.997692, 2, 1, 0.000474975, 0.000474975, -0.00652503, 1.00048, 4, 1, -9.25831e-06, 2.38487e-07, 0.0679054, 0.997692, 8, 1, -9.25831e-06, 2.38487e-07, 0.0679054, 0.997692)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("tentacle_1/metarig/Skeleton3D:spine")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0.000475355, 0.000475355, 0.0207078, 1.00008, 3.2, 1, 0.000474975, 0.000474975, 0.077475, 0.997475, 8, 1, 0.000475355, 0.000475355, 0.0207078, 1.00008)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("tentacle_1/metarig/Skeleton3D:spine.007")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 0.00316989, -1.33029e-05, 0.445775, 0.895139, 2.3, 1, 0.00247497, 0.00147497, 0.207475, 0.978475, 3.8, 1, 0.00347497, -0.000525026, 0.563475, 0.826475, 8, 1, 0.00316989, -1.33029e-05, 0.445775, 0.895139)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t48dk"]
+_data = {
+"RESET": SubResource("Animation_8banf"),
+"Wiggle": SubResource("Animation_x3723"),
+"Wiggle2": SubResource("Animation_6l01w"),
+"Wiggle3": SubResource("Animation_3faob")
+}
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_u8km2"]
+radius = 8.30357
 
 [node name="Tentacle" type="Node3D"]
+script = ExtResource("1_6gkqw")
 
 [node name="tentacle_1" type="Node3D" parent="."]
 
 [node name="metarig" type="Node3D" parent="tentacle_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.196183, 0, 0)
 
 [node name="Skeleton3D" type="Skeleton3D" parent="tentacle_1/metarig"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 bones/0/name = "spine"
 bones/0/parent = -1
 bones/0/rest = Transform3D(0.999764, 0.0217365, 6.87417e-05, -0.0217365, 0.999763, -0.000745482, -8.49296e-05, 0.000743811, 1, 0.0626797, -0.208543, -0.0106889)
 bones/0/enabled = true
-bones/0/position = Vector3(0.0626797, -0.208543, -0.0106889)
-bones/0/rotation = Quaternion(0.000372345, 3.84201e-05, -0.0108689, 0.999941)
+bones/0/position = Vector3(0.062475, 0.000474975, -0.010525)
+bones/0/rotation = Quaternion(0.000474975, 0.000474975, 0.000474975, 1.00048)
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "spine.009"
 bones/1/parent = 0
 bones/1/rest = Transform3D(0.990778, -0.135497, -7.81506e-07, 0.135497, 0.990778, 1.85063e-05, -1.73325e-06, -1.84415e-05, 1, -3.48359e-09, 1.06868, 8.24912e-10)
 bones/1/enabled = true
-bones/1/position = Vector3(-3.48359e-09, 1.06868, 8.24912e-10)
+bones/1/position = Vector3(0.000474975, 0.978475, 0.000474975)
 bones/1/rotation = Quaternion(-9.25831e-06, 2.38487e-07, 0.0679054, 0.997692)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "spine.001"
@@ -155,6 +331,50 @@ bones/10/rotation = Quaternion(0.00227967, -0.00224823, 0.711996, 0.702176)
 bones/10/scale = Vector3(1, 1, 1)
 
 [node name="Plane" type="MeshInstance3D" parent="tentacle_1/metarig/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_n4j1t")
 skin = SubResource("Skin_2631i")
 surface_material_override/0 = SubResource("StandardMaterial3D_ikwe8")
+
+[node name="WiggleBone" type="BoneAttachment3D" parent="tentacle_1/metarig/Skeleton3D"]
+transform = Transform3D(0.980869, -0.194662, 0.00168773, 0.194664, 0.980869, -0.0013389, -0.00139481, 0.00164183, 0.999998, -0.0840376, 0.967918, -0.00905398)
+bone_name = "spine.009"
+bone_idx = 1
+script = ExtResource("2_8ugu5")
+properties = SubResource("Resource_etnol")
+
+[node name="WiggleBone2" type="BoneAttachment3D" parent="tentacle_1/metarig/Skeleton3D"]
+transform = Transform3D(0.954712, 0.297527, 0.0014676, -0.297525, 0.954713, -0.0012928, -0.00178578, 0.000797602, 0.999998, -0.295998, 2.03595, -0.00726624)
+bone_name = "spine.001"
+bone_idx = 2
+script = ExtResource("2_8ugu5")
+properties = SubResource("Resource_3t6h7")
+
+[node name="WiggleBone3" type="BoneAttachment3D" parent="tentacle_1/metarig/Skeleton3D"]
+transform = Transform3D(0.971211, 0.238214, 0.00144632, -0.238212, 0.971212, -0.00136435, -0.00172969, 0.000980544, 0.999998, -0.0350867, 2.87317, -0.0065668)
+bone_name = "spine.008"
+bone_idx = 3
+script = ExtResource("2_8ugu5")
+properties = SubResource("Resource_3t6h7")
+
+[node name="WiggleBone4" type="BoneAttachment3D" parent="tentacle_1/metarig/Skeleton3D"]
+transform = Transform3D(-0.524527, -0.851374, 0.00579148, 0.851366, -0.524553, -0.00451586, 0.00688263, 0.00256198, 0.999973, -0.315374, 4.29133, -0.00285607)
+bone_name = "spine.003"
+bone_idx = 5
+script = ExtResource("2_8ugu5")
+properties = SubResource("Resource_ie5np")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_default_blend_time = 0.1
+libraries = {
+"": SubResource("AnimationLibrary_t48dk")
+}
+
+[node name="PlayerSeeArea" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerSeeArea"]
+shape = SubResource("SphereShape3D_u8km2")
+
+[connection signal="body_entered" from="PlayerSeeArea" to="." method="_on_player_see_area_body_entered"]

@@ -18,7 +18,7 @@
 [ext_resource type="AudioStream" uid="uid://b1x1dr2r7taor" path="res://assets/music/ambiance/ambiance.mp3" id="16_rlelm"]
 [ext_resource type="AudioStream" uid="uid://bjd2jwhkl2kv0" path="res://assets/music/ambiance/cave_ambiance_1.wav" id="17_wdkqd"]
 [ext_resource type="AudioStream" uid="uid://0aqhs0sqilh2" path="res://assets/music/ambiance/cave_extra_ambiance.wav" id="18_ueljy"]
-[ext_resource type="PackedScene" uid="uid://dmppxseq8th7q" path="res://env/bg/tentacle_1.tscn" id="19_rwg36"]
+[ext_resource type="PackedScene" uid="uid://bchbub2wy48dy" path="res://env/bg/tentacle_2.tscn" id="20_qsd14"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ahd0v"]
 sky_top_color = Color(0.427451, 0.313726, 0.215686, 1)
@@ -772,7 +772,7 @@ script = ExtResource("1_7vggu")
 environment = SubResource("Environment_6y66v")
 
 [node name="Player" parent="." instance=ExtResource("1_dc1oe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.4829, -3, -53.0174)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.8382, -3, -53.0174)
 
 [node name="CyclopsBlocks" type="Node3D" parent="."]
 script = ExtResource("2_fruh8")
@@ -1217,8 +1217,17 @@ levels = Array[float]([0.0, -15.0, -8.0])
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Amb"]
 volume_db = -15.182
 
-[node name="Tentacle" parent="." instance=ExtResource("19_rwg36")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.3981, -3.59906, -48.4347)
+[node name="Tentacle7" parent="." instance=ExtResource("20_qsd14")]
+transform = Transform3D(0.775056, 0, 0, 0, 0.775056, 0, 0, 0, 0.775056, -80.8443, -3.41616, -60.8804)
 
-[node name="Tentacle2" parent="." instance=ExtResource("19_rwg36")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.0226, -3.59906, -48.4347)
+[node name="Tentacle8" parent="." instance=ExtResource("20_qsd14")]
+transform = Transform3D(0.775056, 0, 0, 0, 0.775056, 0, 0, 0, 0.775056, -116.114, -3.41616, -46.1326)
+
+[node name="Tentacle9" parent="." instance=ExtResource("20_qsd14")]
+transform = Transform3D(0.91998, 0, 0, 0, 0.91998, 0, 0, 0, 0.91998, -114.129, -4.25812, -45.0959)
+
+[node name="Tentacle11" parent="." instance=ExtResource("20_qsd14")]
+transform = Transform3D(0.91998, 0, 0, 0, 0.91998, 0, 0, 0, 0.91998, -112.697, -4.25812, -45.0959)
+
+[node name="Tentacle10" parent="." instance=ExtResource("20_qsd14")]
+transform = Transform3D(0.337637, 0, 0.855783, 0, 0.91998, 0, -0.855783, 0, 0.337637, -110.811, -4.25812, -45.6537)

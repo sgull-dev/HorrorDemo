@@ -10,3 +10,6 @@ res://player/player.tscn
 res://ui/hud.tscn
 res://scripts/camera/camera_fp.gd
 res://env/bg/tentacle_1.tscn
+res://env/bg/tentacle_2.gd
+res://env/bg/tentacle_2.tscn
+res://env/bg/tentacle_2b.gd

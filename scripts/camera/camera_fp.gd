@@ -15,6 +15,8 @@ extends CharacterBody3D
 var can_jump := true
 var is_running := false
 
+var is_player = true
+
 
 @onready var jump_velocity : float = ((2.0 * jump_height) / jump_time_to_peak) * 1.0
 @onready var jump_gravity : float = ((-2.0 * jump_height) / (jump_time_to_peak * jump_time_to_peak))* -1.0
