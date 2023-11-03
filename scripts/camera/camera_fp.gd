@@ -83,12 +83,13 @@ func get_gravity():
 
 func get_move_speed() -> float:
 	if is_running:
-		print("Char is running. Speed:" + str(run_speed))
+		#print("Char is running. Speed:" + str(run_speed))
+		#handle stamina drain
 		stats.stamina -= stats.stamina_run_drain
+		#if no more stamina, quit running
 		if stats.stamina <= 0:
 			is_running = false
 		return run_speed
 	else:
-		
-		print("Char is walking. Speed:" + str(move_speed))
+		#print("Char is walking. Speed:" + str(move_speed))
 		return move_speed

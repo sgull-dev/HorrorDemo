@@ -1,7 +1,8 @@
+AudioStreamPlayer
+Node
 ProgressBar
 Control
 CanvasLayer
-Node
 Node3D
 AnimationPlayer
 AnimationTree

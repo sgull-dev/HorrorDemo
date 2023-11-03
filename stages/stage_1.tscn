@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://ctwwakv0ktxi1"]
+[gd_scene load_steps=59 format=3 uid="uid://ctwwakv0ktxi1"]
 
 [ext_resource type="Script" path="res://scripts/game/stage.gd" id="1_7vggu"]
 [ext_resource type="PackedScene" uid="uid://do7tf4v7i7ttr" path="res://player/player.tscn" id="1_dc1oe"]
@@ -14,6 +14,11 @@
 [ext_resource type="PackedScene" uid="uid://daj8uhxcpci08" path="res://env/tree_3.tscn" id="10_2lf6h"]
 [ext_resource type="PackedScene" uid="uid://ct4c0gpv21n04" path="res://env/tree_2.tscn" id="11_50n53"]
 [ext_resource type="PackedScene" uid="uid://dxuy81cx1312s" path="res://env/bg/tentacle.tscn" id="12_ggukw"]
+[ext_resource type="Script" path="res://scripts/sound/ambiance_player.gd" id="15_ggvxe"]
+[ext_resource type="AudioStream" uid="uid://b1x1dr2r7taor" path="res://assets/music/ambiance/ambiance.mp3" id="16_rlelm"]
+[ext_resource type="AudioStream" uid="uid://bjd2jwhkl2kv0" path="res://assets/music/ambiance/cave_ambiance_1.wav" id="17_wdkqd"]
+[ext_resource type="AudioStream" uid="uid://0aqhs0sqilh2" path="res://assets/music/ambiance/cave_extra_ambiance.wav" id="18_ueljy"]
+[ext_resource type="PackedScene" uid="uid://dmppxseq8th7q" path="res://env/bg/tentacle_1.tscn" id="19_rwg36"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ahd0v"]
 sky_top_color = Color(0.427451, 0.313726, 0.215686, 1)
@@ -1196,10 +1201,24 @@ transform = Transform3D(1, 0, 0, 0, 0.937008, 0.349309, 0, -0.349308, 0.937008, 
 transform = Transform3D(1, 0, 0, 0, 0.937008, 0.349309, 0, -0.349308, 0.937008, -127.781, 3.90234, 18.023)
 
 [node name="Tentacle7" parent="BackgroundTentacles" instance=ExtResource("12_ggukw")]
-transform = Transform3D(1.6313, 0, 0, 0, 1.52854, 0.569826, 0, -0.569826, 1.52854, 22.8374, 7.46889, -43.3199)
+transform = Transform3D(1.6313, 0, 0, 0, 1.52854, 0.569827, 0, -0.569827, 1.52854, 22.8374, 7.46889, -43.3199)
 
 [node name="Tentacle8" parent="BackgroundTentacles" instance=ExtResource("12_ggukw")]
 transform = Transform3D(1.6313, 0, 0, 0, 1.52854, 0.569827, 0, -0.569827, 1.52854, 18.327, 0.221375, 12.423)
 
 [node name="Tentacle9" parent="BackgroundTentacles" instance=ExtResource("12_ggukw")]
 transform = Transform3D(1.6313, 0, 0, 0, 1.52854, 0.569827, 0, -0.569827, 1.52854, 20.6302, 3.92224, -16.0415)
+
+[node name="Amb" type="Node" parent="."]
+script = ExtResource("15_ggvxe")
+tracks = [ExtResource("16_rlelm"), ExtResource("17_wdkqd"), ExtResource("18_ueljy")]
+levels = Array[float]([0.0, -15.0, -8.0])
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Amb"]
+volume_db = -15.182
+
+[node name="Tentacle" parent="." instance=ExtResource("19_rwg36")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.3981, -3.59906, -48.4347)
+
+[node name="Tentacle2" parent="." instance=ExtResource("19_rwg36")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.0226, -3.59906, -48.4347)
