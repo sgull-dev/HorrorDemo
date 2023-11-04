@@ -8,3 +8,4 @@ res://mat/gobble.tres
 res://player/player.tscn
 res://ui/hud.tscn
 res://env/bg/tentacle_2.tscn
+res://interactables/paper.tscn

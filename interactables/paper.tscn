@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwghl41nawli7"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_pmqhj"]
+radius = 1.36979
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_occy6"]
+albedo_color = Color(0.760784, 0.72549, 0.6, 1)
+
+[node name="Paper" type="Node3D"]
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_pmqhj")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+size = Vector3(0.0769371, 0.4, 0.3)
+material = SubResource("StandardMaterial3D_occy6")

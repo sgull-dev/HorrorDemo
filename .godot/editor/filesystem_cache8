@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699126743
+::res://::1699126759
 icon.svg::CompressedTexture2D::5087123716694208602::1698763959::1698763963::1::::<><>::
 README.md::TextFile::-1::1698766184::0::1::::<><>::
 ::res://addons/::1699126737
@@ -172,7 +172,7 @@ plugin.gd::GDScript::-1::1699126741::0::1::::<>EditorPlugin<>::
 ::res://addons/proton_scatter/demos/::1699126739
 loading.gd::GDScript::-1::1699126739::0::1::::<>Control<>::
 showcase.tscn::PackedScene::223005128466035801::1699126739::0::1::::<><>::uid://bgc5rl13dopuj::::res://addons/proton_scatter/demos/assets/textures/sky_2.png<>res://addons/proton_scatter/src/scatter.gd<>res://addons/proton_scatter/src/stack/modifier_stack.gd<>res://addons/proton_scatter/src/scatter_item.gd<>uid://c7mw5tryqfggw::::res://addons/proton_scatter/demos/assets/materials/m_water.tres<>res://addons/proton_scatter/src/scatter_shape.gd<>res://addons/proton_scatter/src/modifiers/create_inside_grid.gd<>res://addons/proton_scatter/src/modifiers/randomize_transforms.gd<>res://addons/proton_scatter/src/shapes/path_shape.gd<>res://addons/proton_scatter/src/shapes/sphere_shape.gd<>res://addons/proton_scatter/src/shapes/box_shape.gd<>res://addons/proton_scatter/src/modifiers/relax.gd<>res://addons/proton_scatter/src/modifiers/project_on_geometry.gd<>uid://bmglbfn5jaubp::::res://addons/proton_scatter/demos/assets/gobot.tscn<>res://addons/proton_scatter/src/modifiers/create_inside_random.gd<>res://addons/proton_scatter/src/modifiers/randomize_rotation.gd<>res://addons/proton_scatter/src/modifiers/array.gd<>res://addons/proton_scatter/demos/loading.gd
-::res://addons/proton_scatter/demos/assets/::1699126738
+::res://addons/proton_scatter/demos/assets/::1699126749
 brick.tscn::PackedScene::4461370198363028043::1699126737::0::1::::<><>::uid://d1d1fag0m04yc::::res://addons/proton_scatter/demos/assets/models/brick.glb<>uid://dqa2jfs1jy0hq::::res://addons/proton_scatter/demos/assets/textures/t_rock.jpg
 bush.tscn::PackedScene::4702747137064026898::1699126737::0::1::::<><>::uid://dbb4culid55v5::::res://addons/proton_scatter/demos/assets/models/bush.glb<>uid://bn3fr3m3glrnp::::res://addons/proton_scatter/demos/assets/materials/m_bush.tres
 dead_branch.tscn::PackedScene::6127574930005350749::1699126737::0::1::::<><>::uid://cmqlv88xp71tw::::res://addons/proton_scatter/demos/assets/models/dead_branch.glb<>uid://d01d0h08lqqn6::::res://addons/proton_scatter/demos/assets/materials/m_trunk.tres
@@ -198,7 +198,7 @@ m_rock.tres::StandardMaterial3D::613677851949121066::1699126738::0::1::::<><>::u
 m_trunk.tres::StandardMaterial3D::8967884167259866665::1699126738::0::1::::<><>::uid://c7pop5xgpxtiv::::res://addons/proton_scatter/demos/assets/textures/t_tree_bark_rough.png
 m_water.gdshader::Shader::-1::1699126738::0::1::::<><>::
 m_water.tres::ShaderMaterial::7045047269827327842::1699126738::0::1::::<><>::res://addons/proton_scatter/demos/assets/materials/m_water.gdshader
-::res://addons/proton_scatter/demos/assets/models/::1699126738
+::res://addons/proton_scatter/demos/assets/models/::1699126745
 brick.glb::PackedScene::8991952700133542094::1699126738::1699126744::1::::<><>::
 bush.glb::PackedScene::7233280704677990976::1699126738::1699126744::1::::<><>::
 dead_branch.glb::PackedScene::5648844709015429780::1699126738::1699126744::1::::<><>::
@@ -211,7 +211,7 @@ mushrooms.glb::PackedScene::6807503849483953850::1699126738::1699126745::1::::<>
 pine_tree.glb::PackedScene::2919792220738189641::1699126738::1699126745::1::::<><>::
 small_rock.glb::PackedScene::4757044053812207357::1699126738::1699126745::1::::<><>::
 tree.glb::PackedScene::6763230709220249649::1699126738::1699126745::1::::<><>::
-::res://addons/proton_scatter/demos/assets/textures/::1699126739
+::res://addons/proton_scatter/demos/assets/textures/::1699126744
 grid.png::CompressedTexture2D::2223509946207406449::1699126738::1699126744::1::::<><>::
 mushroom.png::CompressedTexture2D::3024718755407046268::1699126738::1699126744::1::::<><>::
 sky_2.png::CompressedTexture2D::2813534988507327629::1699126738::1699126744::1::::<><>::
@@ -225,7 +225,7 @@ t_rock_dirty.png::CompressedTexture2D::8359142190919182199::1699126738::16991267
 t_sand.png::CompressedTexture2D::1304881666377491933::1699126738::1699126744::1::::<><>::
 t_tree_bark.png::CompressedTexture2D::1405231767886497761::1699126738::1699126744::1::::<><>::
 t_tree_bark_rough.png::CompressedTexture2D::7050728466446028697::1699126738::1699126744::1::::<><>::
-::res://addons/proton_scatter/icons/::1699126741
+::res://addons/proton_scatter/icons/::1699126744
 add.svg::CompressedTexture2D::6205448673572958098::1699126739::1699126744::1::::<><>::
 arrow_down.svg::CompressedTexture2D::1401889827814142576::1699126739::1699126744::1::::<><>::
 arrow_exp.svg::CompressedTexture2D::3278281084723836354::1699126739::1699126744::1::::<><>::
@@ -265,7 +265,7 @@ select_all.svg::CompressedTexture2D::1454478165662245340::1699126740::1699126744
 shape.svg::CompressedTexture2D::4547020248900698139::1699126740::1699126744::1::::<><>::
 square_handle.svg::CompressedTexture2D::4509557474980941815::1699126740::1699126744::1::::<><>::
 warning.svg::CompressedTexture2D::7844084449508755635::1699126741::1699126744::1::::<><>::
-::res://addons/proton_scatter/icons/loading/::1699126740
+::res://addons/proton_scatter/icons/loading/::1699126744
 m_loading.tres::StandardMaterial3D::8203903116386922746::1699126739::0::1::::<><>::uid://dev74yqbbxjc6::::res://addons/proton_scatter/icons/loading/t_loading.tres
 progress1.svg::CompressedTexture2D::4001076956673066696::1699126739::1699126744::1::::<><>::
 progress2.svg::CompressedTexture2D::8552539341257854565::1699126740::1699126744::1::::<><>::
@@ -276,7 +276,7 @@ progress6.svg::CompressedTexture2D::6689581160303955065::1699126740::1699126744:
 progress7.svg::CompressedTexture2D::2361652823455718388::1699126740::1699126744::1::::<><>::
 progress8.svg::CompressedTexture2D::3378006279348762943::1699126740::1699126744::1::::<><>::
 t_loading.tres::AnimatedTexture::7485365375583417199::1699126740::0::1::::<><>::uid://bxaffg1bqa2jk::::res://addons/proton_scatter/icons/loading/progress1.svg<>uid://dt36cq4i6vxbp::::res://addons/proton_scatter/icons/loading/progress2.svg<>uid://c0xe1mmwhexf3::::res://addons/proton_scatter/icons/loading/progress3.svg<>uid://b55ls3njsgrix::::res://addons/proton_scatter/icons/loading/progress4.svg<>uid://fq4k4ug1df24::::res://addons/proton_scatter/icons/loading/progress5.svg<>uid://c2kqooswn03uj::::res://addons/proton_scatter/icons/loading/progress6.svg<>uid://8wacu74d4d6s::::res://addons/proton_scatter/icons/loading/progress7.svg<>uid://boeljf8xa2s5d::::res://addons/proton_scatter/icons/loading/progress8.svg
-::res://addons/proton_scatter/icons/types/::1699126741
+::res://addons/proton_scatter/icons/types/::1699126744
 bool.svg::CompressedTexture2D::5720792059934333495::1699126740::1699126744::1::::<><>::
 curve.svg::CompressedTexture2D::3063392609034799131::1699126740::1699126744::1::::<><>::
 float.svg::CompressedTexture2D::5866721485466937170::1699126740::1699126744::1::::<><>::
@@ -287,7 +287,7 @@ vector2.svg::CompressedTexture2D::3026923868587884896::1699126740::1699126744::1
 vector2i.svg::CompressedTexture2D::2147251670759463523::1699126740::1699126744::1::::<><>::
 vector3.svg::CompressedTexture2D::1199740942662378165::1699126740::1699126744::1::::<><>::
 vector3i.svg::CompressedTexture2D::4945237555858927295::1699126740::1699126744::1::::<><>::
-::res://addons/proton_scatter/masks/::1699126741
+::res://addons/proton_scatter/masks/::1699126744
 bars.png::CompressedTexture2D::7530756721571224596::1699126741::1699126744::1::::<><>::
 blinds.png::CompressedTexture2D::2873613439024938586::1699126741::1699126744::1::::<><>::
 checker.png::CompressedTexture2D::8459817916034926659::1699126741::1699126744::1::::<><>::
@@ -345,7 +345,7 @@ relax.gd::GDScript::-1::1699126741::0::1::::<><>::
 remove_outside_shapes.gd::GDScript::-1::1699126741::0::1::::<><>::
 single_item.gd::GDScript::-1::1699126741::0::1::::<><>::
 snap_transforms.gd::GDScript::-1::1699126741::0::1::::<><>::
-::res://addons/proton_scatter/src/modifiers/compute_shaders/::1699126741
+::res://addons/proton_scatter/src/modifiers/compute_shaders/::1699126744
 compute_relax.glsl::RDShaderFile::5839999854058783044::1699126741::1699126744::1::::<><>::
 ::res://addons/proton_scatter/src/particles/::1699126741
 example_random_motion.gdshader::Shader::-1::1699126741::0::1::::<><>::
@@ -371,7 +371,7 @@ curve_mode_button_group.tres::ButtonGroup::1873903020211753970::1699126742::0::1
 path_advanced_options_panel.tscn::PackedScene::1127107311268340388::1699126742::0::1::::<><>::
 path_panel.gd::GDScript::-1::1699126742::0::1::::<>Control<>::
 path_panel.tscn::PackedScene::1491055043446112581::1699126742::0::1::::<><>::res://addons/proton_scatter/src/shapes/gizmos_plugin/components/path_panel.gd<>uid://c1t5x34pc4vs5::::res://addons/proton_scatter/icons/curve_select.svg<>uid://1xy55037k3k5::::res://addons/proton_scatter/src/shapes/gizmos_plugin/components/curve_mode_button_group.tres<>uid://cmykha5ja17vj::::res://addons/proton_scatter/icons/curve_create.svg<>uid://cligdljx1ad5e::::res://addons/proton_scatter/icons/curve_delete.svg<>uid://n66mufjib4ds::::res://addons/proton_scatter/icons/menu.svg
-::res://addons/proton_scatter/src/shapes/gizmos_plugin/icons/::1699126742
+::res://addons/proton_scatter/src/shapes/gizmos_plugin/icons/::1699126744
 main_handle.svg::CompressedTexture2D::8021067672759748642::1699126742::1699126744::1::::<><>::
 secondary_handle.svg::CompressedTexture2D::751800799873568197::1699126742::1699126744::1::::<><>::
 ::res://addons/proton_scatter/src/stack/::1699126743
@@ -437,7 +437,7 @@ plugin.gd::GDScript::-1::1697789522::0::1::::<>EditorPlugin<>::
 wiggle_bone.gd::GDScript::-1::1697789522::0::1::::WiggleBone<>BoneAttachment3D<>::
 wiggle_gizmo_plugin.gd::GDScript::-1::1697789522::0::1::::<>EditorNode3DGizmoPlugin<>::
 wiggle_properties.gd::GDScript::-1::1697789522::0::1::::WiggleProperties<>Resource<>::
-::res://assets/::1699008287
+::res://assets/::1699127012
 ::res://assets/bg/::1699011930
 tentacle_1.glb::PackedScene::2719297421016390987::1699008273::1699008298::1::::<><>::
 tentacle_1_bg_tentacle_2.png::CompressedTexture2D::6940220744553049814::1699008296::1699008299::1::::<><>::
@@ -461,6 +461,8 @@ dead_1.glb::PackedScene::3553468093235652694::1695822403::1698764547::1::::<><>:
 dead_2.glb::PackedScene::7283700580725474803::1695822424::1698764547::1::::<><>::
 pine_1.glb::PackedScene::4935750681867146193::1695822354::1698764547::1::::<><>::
 pine_2.glb::PackedScene::5559880231858353760::1695822374::1698764547::1::::<><>::
+::res://assets/mask/::1699127022
+detail_mask.png::CompressedTexture2D::7683663589321028075::1699127022::1699127025::1::::<><>::
 ::res://assets/music/::1699003017
 ::res://assets/music/ambiance/::1699003755
 ambiance.mp3::AudioStreamMP3::4260396241241544549::1693397073::1699003020::1::::<><>::
@@ -472,19 +474,19 @@ tree_1.tscn::PackedScene::8548592215298231057::1698918122::0::1::::<><>::uid://c
 tree_2.tscn::PackedScene::6166462769513136131::1698918122::0::1::::<><>::uid://clhiod4qqvvmm
 tree_3.tscn::PackedScene::7179881230810189587::1698918122::0::1::::<><>::uid://bqvldn8jeg5eg
 tree_4.tscn::PackedScene::5913211910320327667::1698918122::0::1::::<><>::uid://db1jqp77uod60
-::res://env/bg/::1699126253
+::res://env/bg/::1699126921
 tentacle.gd::GDScript::-1::1698842964::0::1::::<>CSGCylinder3D<>::
 tentacle.tscn::PackedScene::8816410518638103792::1698918122::0::1::::<><>::res://env/bg/tentacle.gd
 tentacle_1.tscn::PackedScene::8033446621569240084::1699012145::0::1::::<><>::res://env/bg/tentacle_2.gd<>uid://c545olp4kosty::::res://assets/bg/tentacle_1_bg_tentacle_2.png<>res://addons/wigglebone/wiggle_bone.gd<>res://addons/wigglebone/wiggle_properties.gd
 tentacle_2.gd::GDScript::-1::1699011507::0::1::::<>Node3D<>::
-tentacle_2.tscn::PackedScene::2541345543384347498::1699126253::0::1::::<><>::res://env/bg/tentacle_2b.gd<>uid://c545olp4kosty::::res://assets/bg/tentacle_1_bg_tentacle_2.png<>uid://dqyvo86ol6shx::::res://assets/bg/tentacle_2_bg_tentacle_2.png<>res://addons/wigglebone/wiggle_bone.gd<>res://addons/wigglebone/wiggle_properties.gd
+tentacle_2.tscn::PackedScene::2541345543384347498::1699126921::0::1::::<><>::res://env/bg/tentacle_2b.gd<>uid://c545olp4kosty::::res://assets/bg/tentacle_1_bg_tentacle_2.png<>uid://dqyvo86ol6shx::::res://assets/bg/tentacle_2_bg_tentacle_2.png<>res://addons/wigglebone/wiggle_bone.gd<>res://addons/wigglebone/wiggle_properties.gd
 tentacle_2b.gd::GDScript::-1::1699012777::0::1::::<>Node3D<>::
 ::res://mat/::1699126253
 brick.tres::StandardMaterial3D::2093726538574491407::1699126253::0::1::::<><>::uid://bcx61h8tfnycv::::res://assets/env/textures/Bricks075B_2K-PNG_Color.png<>uid://dudkvs6l24o27::::res://assets/env/textures/Bricks075B_2K-PNG_AmbientOcclusion.png<>uid://dx3d38sq1nhf0::::res://assets/env/textures/Bricks075B_2K-PNG_NormalGL.png<>uid://c67vxml42bds5::::res://assets/env/textures/Bricks075B_2K-PNG_Roughness.png
 gobble.tres::StandardMaterial3D::24782750840566131::1699126253::0::1::::<><>::uid://7mkgavs852qj::::res://assets/env/textures/Tiles130_2K-PNG_Color.png<>uid://c06y21lbjxjy4::::res://assets/env/textures/Tiles130_2K-PNG_AmbientOcclusion.png<>uid://dgnej5112sry0::::res://assets/env/textures/Tiles130_2K-PNG_NormalGL.png
 ground.tres::StandardMaterial3D::7798130255477124799::1699126253::0::1::::<><>::uid://b64dnde40ej4v::::res://assets/env/textures/Ground048_2K-PNG_Color.png<>uid://catx32uj4qx::::res://assets/env/textures/Ground048_2K-PNG_NormalGL.png<>uid://bk2lxp87k7bby::::res://assets/env/textures/Ground048_2K-PNG_Roughness.png
-::res://player/::1699126253
-player.tscn::PackedScene::8209130059057708195::1699126253::0::1::::<><>::res://scripts/camera/camera_fp.gd<>res://player/player_stats.gd
+::res://player/::1699126921
+player.tscn::PackedScene::8209130059057708195::1699126921::0::1::::<><>::res://scripts/camera/camera_fp.gd<>res://player/player_stats.gd
 player_stats.gd::GDScript::-1::1698920019::0::1::::<>Node<>::
 ::res://scripts/::1699003252
 ::res://scripts/camera/::1699009807
@@ -494,8 +496,8 @@ game_data.gd::GDScript::-1::1696311632::0::1::::<>Node<>::
 stage.gd::GDScript::-1::1695634551::0::1::::<>Node3D<>::
 ::res://scripts/sound/::1699004132
 ambiance_player.gd::GDScript::-1::1699004132::0::1::::<>Node<>::
-::res://stages/::1699126506
-stage_1.tscn::PackedScene::6153182039763411486::1699126506::0::1::::<><>::res://scripts/game/stage.gd<>uid://do7tf4v7i7ttr::::res://player/player.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd<>uid://jd2jmvbr5cyk::::res://ui/hud.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_convex_block.gd<>res://addons/cyclops_level_builder/resources/convex_block_data.gd<>uid://djdqcijska56j::::res://mat/ground.tres<>uid://43hmt7ckaw0f::::res://mat/brick.tres<>uid://mafyska2wpf::::res://mat/gobble.tres<>uid://dt2acg6ywabk0::::res://env/tree_1.tscn<>uid://cqin0bc4gx43p::::res://env/tree_4.tscn<>uid://daj8uhxcpci08::::res://env/tree_3.tscn<>uid://ct4c0gpv21n04::::res://env/tree_2.tscn<>uid://dxuy81cx1312s::::res://env/bg/tentacle.tscn<>res://scripts/sound/ambiance_player.gd<>uid://b1x1dr2r7taor::::res://assets/music/ambiance/ambiance.mp3<>uid://bjd2jwhkl2kv0::::res://assets/music/ambiance/cave_ambiance_1.wav<>uid://0aqhs0sqilh2::::res://assets/music/ambiance/cave_extra_ambiance.wav<>uid://bchbub2wy48dy::::res://env/bg/tentacle_2.tscn
-::res://ui/::1699126253
-hud.tscn::PackedScene::639548819744739234::1699126253::0::1::::<><>::res://ui/StaminaBar.gd
+::res://stages/::1699126921
+stage_1.tscn::PackedScene::6153182039763411486::1699126921::0::1::::<><>::res://scripts/game/stage.gd<>uid://do7tf4v7i7ttr::::res://player/player.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd<>uid://jd2jmvbr5cyk::::res://ui/hud.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_convex_block.gd<>res://addons/cyclops_level_builder/resources/convex_block_data.gd<>uid://djdqcijska56j::::res://mat/ground.tres<>uid://43hmt7ckaw0f::::res://mat/brick.tres<>uid://mafyska2wpf::::res://mat/gobble.tres<>uid://dt2acg6ywabk0::::res://env/tree_1.tscn<>uid://cqin0bc4gx43p::::res://env/tree_4.tscn<>uid://daj8uhxcpci08::::res://env/tree_3.tscn<>uid://ct4c0gpv21n04::::res://env/tree_2.tscn<>uid://dxuy81cx1312s::::res://env/bg/tentacle.tscn<>res://scripts/sound/ambiance_player.gd<>uid://b1x1dr2r7taor::::res://assets/music/ambiance/ambiance.mp3<>uid://bjd2jwhkl2kv0::::res://assets/music/ambiance/cave_ambiance_1.wav<>uid://0aqhs0sqilh2::::res://assets/music/ambiance/cave_extra_ambiance.wav<>res://addons/proton_scatter/src/scatter.gd<>uid://bchbub2wy48dy::::res://env/bg/tentacle_2.tscn<>res://addons/proton_scatter/src/stack/modifier_stack.gd<>res://addons/proton_scatter/src/modifiers/create_inside_random.gd<>res://addons/proton_scatter/src/modifiers/randomize_transforms.gd<>res://addons/proton_scatter/src/modifiers/relax.gd<>res://addons/proton_scatter/src/modifiers/project_on_geometry.gd<>res://addons/proton_scatter/src/scatter_item.gd<>res://addons/proton_scatter/src/scatter_shape.gd<>res://addons/proton_scatter/src/shapes/sphere_shape.gd
+::res://ui/::1699126921
+hud.tscn::PackedScene::639548819744739234::1699126921::0::1::::<><>::res://ui/StaminaBar.gd
 StaminaBar.gd::GDScript::-1::1698920418::0::1::::<>ProgressBar<>::
