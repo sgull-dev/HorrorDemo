@@ -5,11 +5,6 @@ res://addons/cyclops_level_builder/docks/material_palette/thumbnail_normal_theme
 res://mat/ground.tres
 res://mat/brick.tres
 res://mat/gobble.tres
-res://scripts/sound/ambiance_player.gd
 res://player/player.tscn
 res://ui/hud.tscn
-res://scripts/camera/camera_fp.gd
-res://env/bg/tentacle_1.tscn
-res://env/bg/tentacle_2.gd
 res://env/bg/tentacle_2.tscn
-res://env/bg/tentacle_2b.gd

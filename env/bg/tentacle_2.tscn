@@ -302,28 +302,28 @@ skin = SubResource("Skin_lysi2")
 surface_material_override/0 = SubResource("StandardMaterial3D_r0jmk")
 
 [node name="WiggleBone" type="BoneAttachment3D" parent="tentacle_2/metarig/Skeleton3D"]
-transform = Transform3D(0.999764, 0.0217365, 6.8738e-05, -0.0217365, 0.999763, -0.000745463, -8.49255e-05, 0.000743792, 1, 0.0626797, -0.208543, -0.0106889)
+transform = Transform3D(0.999764, 0.0217365, 6.87379e-05, -0.0217365, 0.999763, -0.000745463, -8.49254e-05, 0.000743793, 1, 0.0626797, -0.208543, -0.0106889)
 bone_name = "spine"
 bone_idx = 0
 script = ExtResource("3_bkhxb")
 properties = SubResource("Resource_kbnqv")
 
 [node name="WiggleBone2" type="BoneAttachment3D" parent="tentacle_2/metarig/Skeleton3D"]
-transform = Transform3D(0.92722, 0.374518, -0.000147142, -0.374518, 0.927219, -0.000662643, -0.000111739, 0.000669523, 1, -0.0381447, 1.94166, -0.00909921)
+transform = Transform3D(0.92722, 0.374518, -0.000147142, -0.374518, 0.92722, -0.000662643, -0.000111738, 0.000669523, 1, -0.038145, 1.94166, -0.00909916)
 bone_name = "spine.001"
 bone_idx = 2
 script = ExtResource("3_bkhxb")
 properties = SubResource("Resource_qufdg")
 
 [node name="WiggleBone3" type="BoneAttachment3D" parent="tentacle_2/metarig/Skeleton3D"]
-transform = Transform3D(-0.453236, -0.891382, 0.00389878, 0.891373, -0.45325, -0.00422797, 0.00553586, 0.00155901, 0.999983, 0.126827, 4.19108, -0.00611906)
+transform = Transform3D(-0.453238, -0.891381, 0.00389879, 0.891372, -0.453252, -0.00422796, 0.00553585, 0.001559, 0.999983, 0.126825, 4.19109, -0.00611902)
 bone_name = "spine.003"
 bone_idx = 5
 script = ExtResource("3_bkhxb")
 properties = SubResource("Resource_7p6ln")
 
 [node name="WiggleBone4" type="BoneAttachment3D" parent="tentacle_2/metarig/Skeleton3D"]
-transform = Transform3D(0.8597, -0.510799, 0.000506362, 0.510799, 0.859697, -0.00230517, 0.000742161, 0.0022404, 0.999997, 0.538557, 3.49813, -0.00792494)
+transform = Transform3D(0.859699, -0.5108, 0.000506363, 0.5108, 0.859696, -0.00230517, 0.000742163, 0.0022404, 0.999997, 0.538556, 3.49813, -0.00792489)
 bone_name = "spine.002"
 bone_idx = 4
 script = ExtResource("3_bkhxb")
