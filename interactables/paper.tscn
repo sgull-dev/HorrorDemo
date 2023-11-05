@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwghl41nawli7"]
+[gd_scene load_steps=4 format=3 uid="uid://dwghl41nawli7"]
+
+[ext_resource type="Script" path="res://interactables/paper.gd" id="1_11gfw"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_pmqhj"]
 radius = 1.36979
@@ -7,6 +9,7 @@ radius = 1.36979
 albedo_color = Color(0.760784, 0.72549, 0.6, 1)
 
 [node name="Paper" type="Node3D"]
+script = ExtResource("1_11gfw")
 
 [node name="Area3D" type="Area3D" parent="."]
 collision_layer = 0
@@ -18,3 +21,6 @@ shape = SubResource("SphereShape3D_pmqhj")
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 size = Vector3(0.0769371, 0.4, 0.3)
 material = SubResource("StandardMaterial3D_occy6")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

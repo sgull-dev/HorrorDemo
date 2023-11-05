@@ -1,6 +1,7 @@
-res://interactables
 res://env/bg
 res://scripts/game
+res://assets/bg
+res://interactables
 res://ui
 res://env
 res://mat

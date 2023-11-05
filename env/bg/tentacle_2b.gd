@@ -9,8 +9,8 @@ var popped := false
 
 
 func _ready():
-	global_position.y -= 4.0
-	pop_up_amount = -4.0
+	global_position.y -= 4.3
+	pop_up_amount = -4.3
 	#anim.play("Wiggle")
 
 
@@ -38,5 +38,5 @@ func _on_player_see_area_body_entered(body):
 		pop_up()
 
 
-func _on_animation_player_animation_finished(anim_name):
+func _on_animation_player_animation_finished(_anim_name):
 	anim.queue("metarigAction")

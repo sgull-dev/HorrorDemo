@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://jd2jmvbr5cyk"]
+[gd_scene load_steps=3 format=3 uid="uid://jd2jmvbr5cyk"]
 
 [ext_resource type="Script" path="res://ui/StaminaBar.gd" id="1_1tstm"]
+[ext_resource type="Texture2D" uid="uid://irxleow7hxc1" path="res://assets/ui/lock_view.jpg" id="2_1ov3x"]
 
 [node name="HUD" type="CanvasLayer"]
 
@@ -19,3 +20,55 @@ offset_top = 9.0
 offset_right = 388.0
 offset_bottom = 36.0
 script = ExtResource("1_1tstm")
+
+[node name="PageViewer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LockViewer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="LockViewer"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_1ov3x")
+
+[node name="Number1" type="RichTextLabel" parent="LockViewer"]
+layout_mode = 0
+offset_left = 702.0
+offset_top = 598.0
+offset_right = 742.0
+offset_bottom = 638.0
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+fit_content = true
+
+[node name="Number2" type="RichTextLabel" parent="LockViewer"]
+layout_mode = 0
+offset_left = 798.0
+offset_top = 616.0
+offset_right = 838.0
+offset_bottom = 656.0
+theme_override_font_sizes/normal_font_size = 32
+text = "2"
+fit_content = true
+
+[node name="Number3" type="RichTextLabel" parent="LockViewer"]
+layout_mode = 0
+offset_left = 885.0
+offset_top = 630.0
+offset_right = 925.0
+offset_bottom = 670.0
+theme_override_font_sizes/normal_font_size = 32
+text = "3"
+fit_content = true

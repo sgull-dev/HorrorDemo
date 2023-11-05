@@ -1,8 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://bchbub2wy48dy"]
+[gd_scene load_steps=16 format=3 uid="uid://bchbub2wy48dy"]
 
 [ext_resource type="Script" path="res://env/bg/tentacle_2b.gd" id="1_1c2e2"]
-[ext_resource type="Texture2D" uid="uid://c545olp4kosty" path="res://assets/bg/tentacle_1_bg_tentacle_2.png" id="2_3cawg"]
 [ext_resource type="Texture2D" uid="uid://dqyvo86ol6shx" path="res://assets/bg/tentacle_2_bg_tentacle_2.png" id="2_qk7u3"]
+[ext_resource type="Material" uid="uid://6tk5gmm7reyc" path="res://env/bg/tentacle_alpha.tres" id="3_0a1jv"]
 [ext_resource type="Script" path="res://addons/wigglebone/wiggle_bone.gd" id="3_bkhxb"]
 [ext_resource type="Script" path="res://addons/wigglebone/wiggle_properties.gd" id="4_r7qn0"]
 
@@ -70,12 +70,6 @@ bind/9/pose = Transform3D(-0.369918, 0.929029, 0.00805621, -0.928995, -0.369982,
 bind/10/name = &"Target"
 bind/10/bone = -1
 bind/10/pose = Transform3D(-0.0138872, 0.999883, 0.00640353, -0.999903, -0.0138876, -1.19326e-09, 8.89298e-05, -0.00640291, 0.999979, -2.98157, -0.520115, 0.0240445)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r0jmk"]
-transparency = 1
-albedo_texture = ExtResource("2_3cawg")
-billboard_mode = 2
-billboard_keep_scale = true
 
 [sub_resource type="Resource" id="Resource_kbnqv"]
 script = ExtResource("4_r7qn0")
@@ -299,7 +293,7 @@ bones/10/scale = Vector3(1, 1, 1)
 [node name="Plane" type="MeshInstance3D" parent="tentacle_2/metarig/Skeleton3D"]
 mesh = SubResource("ArrayMesh_n5ylo")
 skin = SubResource("Skin_lysi2")
-surface_material_override/0 = SubResource("StandardMaterial3D_r0jmk")
+surface_material_override/0 = ExtResource("3_0a1jv")
 
 [node name="WiggleBone" type="BoneAttachment3D" parent="tentacle_2/metarig/Skeleton3D"]
 transform = Transform3D(0.999764, 0.0217365, 6.87379e-05, -0.0217365, 0.999763, -0.000745463, -8.49254e-05, 0.000743793, 1, 0.0626797, -0.208543, -0.0106889)

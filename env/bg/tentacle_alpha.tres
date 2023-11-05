@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://6tk5gmm7reyc"]
+
+[ext_resource type="Texture2D" uid="uid://dqyvo86ol6shx" path="res://assets/bg/tentacle_2_bg_tentacle_2.png" id="1_rdqir"]
+
+[resource]
+transparency = 1
+albedo_texture = ExtResource("1_rdqir")
+billboard_mode = 2
+billboard_keep_scale = true
