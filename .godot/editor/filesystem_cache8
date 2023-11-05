@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699184968
+::res://::1699212189
 icon.svg::CompressedTexture2D::5087123716694208602::1698763959::1698763963::1::::<><>::
 README.md::TextFile::-1::1698766184::0::1::::<><>::
 ::res://addons/::1699126737
@@ -437,7 +437,11 @@ plugin.gd::GDScript::-1::1697789522::0::1::::<>EditorPlugin<>::
 wiggle_bone.gd::GDScript::-1::1697789522::0::1::::WiggleBone<>BoneAttachment3D<>::
 wiggle_gizmo_plugin.gd::GDScript::-1::1697789522::0::1::::<>EditorNode3DGizmoPlugin<>::
 wiggle_properties.gd::GDScript::-1::1697789522::0::1::::WiggleProperties<>Resource<>::
-::res://assets/::1699180185
+::res://assets/::1699212021
+::res://assets/3d/::1699212024
+::res://assets/3d/lock/::1699212178
+chain.glb::PackedScene::5542173941169281055::1699212158::1699212190::1::::<><>::
+Lock.fbx::PackedScene::2826099203892547427::1699212027::1699212191::1::::<><>::
 ::res://assets/bg/::1699175195
 tentacle_1.glb::PackedScene::2719297421016390987::1699008273::1699008298::1::::<><>::
 tentacle_1_bg_tentacle_2.png::PackedScene::8323326919778599737::1699008296::1699008299::1::::<><>::uid://dqyvo86ol6shx
@@ -471,13 +475,13 @@ ambiance.mp3::AudioStreamMP3::4260396241241544549::1693397073::1699003020::1::::
 ambiance_loop_2.wav::AudioStreamWAV::5486236946100427809::1694110342::1699003395::1::::<><>::
 cave_ambiance_1.wav::AudioStreamWAV::3025970007444871955::1693397004::1699003755::1::::<><>::
 cave_extra_ambiance.wav::AudioStreamWAV::1755706048272366709::1693396980::1699003755::1::::<><>::
-::res://assets/ui/::1699185044
+::res://assets/ui/::1699185045
 gen.png::CompressedTexture2D::8457412394719391462::1699180231::1699180393::1::::<><>::
 lock_view.jpg::CompressedTexture2D::598021538253164082::1699184797::1699185045::1::::<><>::
 lock_view.png::CompressedTexture2D::4453076646559340171::1699180201::1699180393::1::::<><>::
 ::res://env/::1699173567
-tree_1.tscn::PackedScene::8548592215298231057::1699173567::0::1::::<><>::uid://cck6dfb4uw3ib::::res://assets/env/trees/pine_1.glb
-tree_2.tscn::PackedScene::6166462769513136131::1699173567::0::1::::<><>::uid://clhiod4qqvvmm::::res://assets/env/trees/pine_2.glb
+tree_1.tscn::PackedScene::8548592215298231057::1699173567::0::1::::<><>::uid://cck6dfb4uw3ib
+tree_2.tscn::PackedScene::6166462769513136131::1699173567::0::1::::<><>::uid://clhiod4qqvvmm
 tree_3.tscn::PackedScene::7179881230810189587::1698918122::0::1::::<><>::uid://bqvldn8jeg5eg
 tree_4.tscn::PackedScene::5913211910320327667::1698918122::0::1::::<><>::uid://db1jqp77uod60
 ::res://env/bg/::1699184991
@@ -511,6 +515,6 @@ stage.gd::GDScript::-1::1695634551::0::1::::<>Node3D<>::
 ambiance_player.gd::GDScript::-1::1699004132::0::1::::<>Node<>::
 ::res://stages/::1699185009
 stage_1.tscn::PackedScene::6153182039763411486::1699185009::0::1::::<><>::res://scripts/game/stage.gd<>uid://do7tf4v7i7ttr::::res://player/player.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd<>uid://jd2jmvbr5cyk::::res://ui/hud.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_convex_block.gd<>res://addons/cyclops_level_builder/resources/convex_block_data.gd<>uid://djdqcijska56j::::res://mat/ground.tres<>uid://43hmt7ckaw0f::::res://mat/brick.tres<>uid://mafyska2wpf::::res://mat/gobble.tres<>res://scripts/game/paper_data.gd<>uid://dt2acg6ywabk0::::res://env/tree_1.tscn<>uid://cqin0bc4gx43p::::res://env/tree_4.tscn<>uid://daj8uhxcpci08::::res://env/tree_3.tscn<>uid://ct4c0gpv21n04::::res://env/tree_2.tscn<>uid://dxuy81cx1312s::::res://env/bg/tentacle.tscn<>res://scripts/sound/ambiance_player.gd<>uid://b1x1dr2r7taor::::res://assets/music/ambiance/ambiance.mp3<>uid://bjd2jwhkl2kv0::::res://assets/music/ambiance/cave_ambiance_1.wav<>uid://0aqhs0sqilh2::::res://assets/music/ambiance/cave_extra_ambiance.wav<>uid://bchbub2wy48dy::::res://env/bg/tentacle_2.tscn<>uid://bkiy7xeui35gi::::res://env/bg/tentacle_3.tscn<>uid://dwghl41nawli7::::res://interactables/paper.tscn
-::res://ui/::1699184991
-hud.tscn::PackedScene::639548819744739234::1699184991::0::1::::<><>::res://ui/StaminaBar.gd
+::res://ui/::1699185351
+hud.tscn::PackedScene::639548819744739234::1699185351::0::1::::<><>::res://ui/StaminaBar.gd<>uid://irxleow7hxc1::::res://assets/ui/lock_view.jpg
 StaminaBar.gd::GDScript::-1::1698920418::0::1::::<>ProgressBar<>::

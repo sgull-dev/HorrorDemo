@@ -22,6 +22,7 @@ offset_bottom = 36.0
 script = ExtResource("1_1tstm")
 
 [node name="PageViewer" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -30,6 +31,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="LockViewer" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
