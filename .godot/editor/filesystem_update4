@@ -6,3 +6,8 @@ res://mat/ground.tres
 res://mat/brick.tres
 res://mat/gobble.tres
 res://env/bg/tentacle_alpha.tres
+res://player/player.tscn
+res://ui/hud.tscn
+res://env/lock.tscn
+res://env/bg/tentacle_3.tscn
+res://ui/ui_lock.gd

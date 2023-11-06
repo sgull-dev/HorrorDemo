@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c3yqphcekdto4"]
+
+[ext_resource type="FontFile" uid="uid://nl4eu5s7ufhx" path="res://assets/font/Arial Rounded MT Regular.ttf" id="1_q467v"]
+
+[resource]
+default_font = ExtResource("1_q467v")
+Fonts/fonts/large = ExtResource("1_q467v")
+RichTextLabel/colors/default_color = Color(0.529412, 0.258824, 0.180392, 1)

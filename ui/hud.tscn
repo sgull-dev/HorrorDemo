@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://jd2jmvbr5cyk"]
+[gd_scene load_steps=5 format=3 uid="uid://jd2jmvbr5cyk"]
 
 [ext_resource type="Script" path="res://ui/StaminaBar.gd" id="1_1tstm"]
-[ext_resource type="Texture2D" uid="uid://irxleow7hxc1" path="res://assets/ui/lock_view.jpg" id="2_1ov3x"]
 [ext_resource type="Script" path="res://ui/ui_lock.gd" id="2_gtfxa"]
+[ext_resource type="Texture2D" uid="uid://cp5ykbufygt4o" path="res://assets/ui/lock_view_2.jpg" id="3_8j4bh"]
+[ext_resource type="Theme" uid="uid://c3yqphcekdto4" path="res://mat/text_theme.tres" id="4_d65b1"]
 
 [node name="HUD" type="CanvasLayer"]
+process_mode = 3
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -32,7 +34,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="LockViewer" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -45,34 +46,42 @@ script = ExtResource("2_gtfxa")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("2_1ov3x")
+texture = ExtResource("3_8j4bh")
 
 [node name="Number1" type="RichTextLabel" parent="LockViewer"]
 layout_mode = 0
-offset_left = 702.0
-offset_top = 598.0
-offset_right = 742.0
-offset_bottom = 638.0
+offset_left = 789.0
+offset_top = 715.0
+offset_right = 829.0
+offset_bottom = 760.0
+theme = ExtResource("4_d65b1")
 theme_override_font_sizes/normal_font_size = 32
 text = "1"
 fit_content = true
 
 [node name="Number2" type="RichTextLabel" parent="LockViewer"]
 layout_mode = 0
-offset_left = 798.0
-offset_top = 616.0
-offset_right = 838.0
-offset_bottom = 656.0
+offset_left = 880.0
+offset_top = 718.0
+offset_right = 920.0
+offset_bottom = 763.0
+theme = ExtResource("4_d65b1")
 theme_override_font_sizes/normal_font_size = 32
 text = "2"
 fit_content = true
 
 [node name="Number3" type="RichTextLabel" parent="LockViewer"]
 layout_mode = 0
-offset_left = 885.0
-offset_top = 630.0
-offset_right = 925.0
-offset_bottom = 670.0
+offset_left = 971.0
+offset_top = 714.0
+offset_right = 1011.0
+offset_bottom = 759.0
+theme = ExtResource("4_d65b1")
 theme_override_font_sizes/normal_font_size = 32
 text = "3"
 fit_content = true
+
+[node name="Buttons" type="Control" parent="LockViewer"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
