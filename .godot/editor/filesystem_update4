@@ -11,3 +11,7 @@ res://ui/hud.tscn
 res://env/lock.tscn
 res://env/bg/tentacle_3.tscn
 res://ui/ui_lock.gd
+res://env/bg/scare_sfx.gd
+res://ui/ui_win.gd
+res://ui/StaminaBar.gd
+res://env/bg/tentacle_2b.gd

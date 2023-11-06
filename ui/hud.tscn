@@ -1,9 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://jd2jmvbr5cyk"]
+[gd_scene load_steps=11 format=3 uid="uid://jd2jmvbr5cyk"]
 
 [ext_resource type="Script" path="res://ui/StaminaBar.gd" id="1_1tstm"]
 [ext_resource type="Script" path="res://ui/ui_lock.gd" id="2_gtfxa"]
 [ext_resource type="Texture2D" uid="uid://cp5ykbufygt4o" path="res://assets/ui/lock_view_2.jpg" id="3_8j4bh"]
 [ext_resource type="Theme" uid="uid://c3yqphcekdto4" path="res://mat/text_theme.tres" id="4_d65b1"]
+[ext_resource type="Texture2D" uid="uid://b0ykvt16lmy43" path="res://assets/ui/key_in_hole.png" id="5_b3s4r"]
+[ext_resource type="AudioStream" uid="uid://tegfnh73vv0y" path="res://assets/sfx/Wood Block2.wav" id="5_kk3kl"]
+[ext_resource type="AudioStream" uid="uid://dyklicxq5ima4" path="res://assets/sfx/lock_open.wav" id="6_1mkp2"]
+[ext_resource type="Script" path="res://ui/ui_win.gd" id="6_qkk3y"]
+[ext_resource type="AudioStream" uid="uid://1lbjebgumkin" path="res://assets/sfx/Abstract2.wav" id="7_b1fa2"]
+[ext_resource type="AudioStream" uid="uid://cgi2ryldfd735" path="res://assets/sfx/key.mp3" id="8_rdfna"]
 
 [node name="HUD" type="CanvasLayer"]
 process_mode = 3
@@ -67,7 +73,7 @@ offset_right = 920.0
 offset_bottom = 763.0
 theme = ExtResource("4_d65b1")
 theme_override_font_sizes/normal_font_size = 32
-text = "2"
+text = "1"
 fit_content = true
 
 [node name="Number3" type="RichTextLabel" parent="LockViewer"]
@@ -78,10 +84,159 @@ offset_right = 1011.0
 offset_bottom = 759.0
 theme = ExtResource("4_d65b1")
 theme_override_font_sizes/normal_font_size = 32
-text = "3"
+text = "1"
 fit_content = true
 
 [node name="Buttons" type="Control" parent="LockViewer"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OpenButton" type="Button" parent="LockViewer/Buttons"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -413.0
+offset_right = -20.0
+offset_bottom = -382.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("4_d65b1")
+text = "Open Lock"
+
+[node name="NoSFX" type="AudioStreamPlayer" parent="LockViewer/Buttons/OpenButton"]
+stream = ExtResource("5_kk3kl")
+volume_db = -8.0
+
+[node name="YesSFX" type="AudioStreamPlayer" parent="LockViewer/Buttons/OpenButton"]
+stream = ExtResource("6_1mkp2")
+volume_db = -5.0
+
+[node name="InsertKeyButton" type="TextureButton" parent="LockViewer/Buttons"]
+layout_mode = 0
+offset_left = 865.0
+offset_top = 804.0
+offset_right = 918.0
+offset_bottom = 887.0
+
+[node name="Num1Button" type="TextureButton" parent="LockViewer/Buttons"]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 696.0
+offset_right = 839.0
+offset_bottom = 777.0
+
+[node name="Num2Button" type="TextureButton" parent="LockViewer/Buttons"]
+layout_mode = 0
+offset_left = 855.0
+offset_top = 701.0
+offset_right = 929.0
+offset_bottom = 779.0
+
+[node name="Num3Button" type="TextureButton" parent="LockViewer/Buttons"]
+layout_mode = 0
+offset_left = 948.0
+offset_top = 701.0
+offset_right = 1019.0
+offset_bottom = 778.0
+
+[node name="ReturnButton" type="Button" parent="LockViewer/Buttons"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 955.0
+offset_right = 90.0
+offset_bottom = 1052.0
+theme = ExtResource("4_d65b1")
+theme_override_colors/font_color = Color(0.8, 0.709804, 0.388235, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_font_sizes/font_size = 76
+text = "X"
+
+[node name="TurnSFX" type="AudioStreamPlayer" parent="LockViewer/Buttons"]
+stream = ExtResource("7_b1fa2")
+
+[node name="KeyImg" type="TextureRect" parent="LockViewer"]
+visible = false
+modulate = Color(0.52549, 0.533333, 0.396078, 1)
+layout_mode = 0
+offset_left = 549.0
+offset_top = 753.0
+offset_right = 1061.0
+offset_bottom = 1265.0
+rotation = -0.49909
+scale = Vector2(0.925, 0.925)
+mouse_filter = 2
+texture = ExtResource("5_b3s4r")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="LockViewer/KeyImg"]
+stream = ExtResource("8_rdfna")
+volume_db = -6.0
+
+[node name="WinScreen" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_qkk3y")
+
+[node name="ColorRect" type="ColorRect" parent="WinScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="WinScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -289.0
+offset_top = -88.0
+offset_right = 289.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_d65b1")
+theme_override_font_sizes/normal_font_size = 151
+text = "You win!"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Button" type="Button" parent="WinScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = 122.0
+offset_right = 46.0
+offset_bottom = 153.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit Game"
+
+[connection signal="button_down" from="LockViewer/Buttons/OpenButton" to="LockViewer" method="_on_open_button_button_down"]
+[connection signal="button_down" from="LockViewer/Buttons/InsertKeyButton" to="LockViewer" method="_on_insert_key_button_button_down"]
+[connection signal="button_down" from="LockViewer/Buttons/Num1Button" to="LockViewer" method="_on_num_1_button_button_down"]
+[connection signal="button_down" from="LockViewer/Buttons/Num2Button" to="LockViewer" method="_on_num_2_button_button_down"]
+[connection signal="button_down" from="LockViewer/Buttons/Num3Button" to="LockViewer" method="_on_num_3_button_button_down"]
+[connection signal="button_down" from="LockViewer/Buttons/ReturnButton" to="LockViewer" method="_on_return_button_button_down"]
+[connection signal="button_down" from="WinScreen/Button" to="WinScreen" method="_on_button_button_down"]
