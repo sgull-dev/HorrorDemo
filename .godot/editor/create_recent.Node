@@ -1,3 +1,5 @@
+CollisionShape3D
+Area3D
 Node3D
 RichTextLabel
 LineEditorInt
@@ -9,8 +11,6 @@ AnimationPlayer
 AnimationTree
 ProtonScatter
 CSGBox3D
-CollisionShape3D
-Area3D
 AudioStreamPlayer
 ProgressBar
 CanvasLayer

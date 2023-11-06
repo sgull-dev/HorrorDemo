@@ -38,7 +38,7 @@ func pop_up():
 
 
 func _on_player_see_area_body_entered(body):
-	if "is_player" in body:
+	if "is_player" in body and !popped:
 		pop_up()
 
 

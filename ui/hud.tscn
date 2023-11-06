@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://jd2jmvbr5cyk"]
+[gd_scene load_steps=4 format=3 uid="uid://jd2jmvbr5cyk"]
 
 [ext_resource type="Script" path="res://ui/StaminaBar.gd" id="1_1tstm"]
 [ext_resource type="Texture2D" uid="uid://irxleow7hxc1" path="res://assets/ui/lock_view.jpg" id="2_1ov3x"]
+[ext_resource type="Script" path="res://ui/ui_lock.gd" id="2_gtfxa"]
 
 [node name="HUD" type="CanvasLayer"]
 
@@ -38,6 +39,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_gtfxa")
 
 [node name="TextureRect" type="TextureRect" parent="LockViewer"]
 layout_mode = 0

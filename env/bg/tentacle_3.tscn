@@ -71,7 +71,7 @@ bind/10/pose = Transform3D(-0.0138872, 0.999883, 0.00640353, -0.999903, -0.01388
 [sub_resource type="Resource" id="Resource_1uxm6"]
 script = ExtResource("5_0ujok")
 mode = 0
-stiffness = 0.61
+stiffness = 0.37
 damping = 0.44
 gravity = Vector3(0, 0, 0)
 length = 0.9
@@ -81,8 +81,8 @@ max_degrees = 29.0
 [sub_resource type="Resource" id="Resource_acc00"]
 script = ExtResource("5_0ujok")
 mode = 0
-stiffness = 0.23
-damping = 0.31
+stiffness = 0.13
+damping = 0.2
 gravity = Vector3(0, 0, 0)
 length = 1.11
 max_distance = 0.1
@@ -91,8 +91,8 @@ max_degrees = 36.5
 [sub_resource type="Resource" id="Resource_7bjtv"]
 script = ExtResource("5_0ujok")
 mode = 0
-stiffness = 0.41
-damping = 0.77
+stiffness = 0.27
+damping = 0.37
 gravity = Vector3(0, 0, 0)
 length = 0.66
 max_distance = 0.1
@@ -101,8 +101,8 @@ max_degrees = 36.5
 [sub_resource type="Resource" id="Resource_0ok3p"]
 script = ExtResource("5_0ujok")
 mode = 0
-stiffness = 0.5
-damping = 0.54
+stiffness = 0.34
+damping = 0.38
 gravity = Vector3(0, 0, 0)
 length = 0.81
 max_distance = 0.1
@@ -111,8 +111,8 @@ max_degrees = 36.5
 [sub_resource type="Resource" id="Resource_etce3"]
 script = ExtResource("5_0ujok")
 mode = 0
-stiffness = 0.36
-damping = 0.42
+stiffness = 0.23
+damping = 0.27
 gravity = Vector3(0, 0, 0)
 length = 0.71
 max_distance = 0.1
@@ -311,35 +311,35 @@ skin = SubResource("Skin_bt4rc")
 surface_material_override/0 = ExtResource("3_g2jfb")
 
 [node name="WiggleBone" type="BoneAttachment3D" parent="tentacle_3/metarig/Skeleton3D"]
-transform = Transform3D(0.966779, -0.255612, 0.000774203, 0.255612, 0.966779, -0.000819755, -0.000538945, 0.000990418, 0.999999, -0.0775604, 0.850895, -0.0096846)
+transform = Transform3D(0.994229, -0.107277, 7.77893e-05, 0.107277, 0.994229, -0.000722919, 2.12494e-07, 0.000727092, 1, 0.0859091, 0.859884, -0.00989402)
 bone_name = "spine.009"
 bone_idx = 1
 script = ExtResource("4_e2784")
 properties = SubResource("Resource_1uxm6")
 
 [node name="WiggleBone2" type="BoneAttachment3D" parent="tentacle_3/metarig/Skeleton3D"]
-transform = Transform3D(0.969733, 0.244168, 0.000562016, -0.244167, 0.969733, -0.000780463, -0.000735569, 0.000619615, 0.999999, -0.355888, 1.90359, -0.00860617)
+transform = Transform3D(0.923469, 0.383673, -0.000127325, -0.383673, 0.923469, -0.000655151, -0.000133783, 0.000653863, 1, -0.0309021, 1.94247, -0.00910232)
 bone_name = "spine.001"
 bone_idx = 2
 script = ExtResource("4_e2784")
 properties = SubResource("Resource_acc00")
 
 [node name="WiggleBone3" type="BoneAttachment3D" parent="tentacle_3/metarig/Skeleton3D"]
-transform = Transform3D(0.98259, 0.185787, 0.000559184, -0.185786, 0.98259, -0.000855642, -0.000708415, 0.000736857, 0.999999, -0.141769, 2.75398, -0.00806281)
+transform = Transform3D(0.945599, 0.325334, -0.000141789, -0.325334, 0.945599, -0.000730963, -0.000103732, 0.000737327, 1, 0.305555, 2.75229, -0.00852892)
 bone_name = "spine.008"
 bone_idx = 3
 script = ExtResource("4_e2784")
 properties = SubResource("Resource_7bjtv")
 
 [node name="WiggleBone4" type="BoneAttachment3D" parent="tentacle_3/metarig/Skeleton3D"]
-transform = Transform3D(0.784491, -0.620138, 0.00145589, 0.62014, 0.784488, -0.00232095, 0.00029718, 0.00272362, 0.999996, 0.00383632, 3.52406, -0.00748532)
+transform = Transform3D(0.86322, -0.504827, 0.00053571, 0.504826, 0.863218, -0.00231205, 0.00070475, 0.00226625, 0.999997, 0.560526, 3.49338, -0.00795106)
 bone_name = "spine.002"
 bone_idx = 4
 script = ExtResource("4_e2784")
 properties = SubResource("Resource_0ok3p")
 
 [node name="WiggleBone5" type="BoneAttachment3D" parent="tentacle_3/metarig/Skeleton3D"]
-transform = Transform3D(-0.999497, -0.0306418, 0.00815693, 0.0306578, -0.999528, 0.00184282, 0.00809661, 0.00209197, 0.999965, -1.02582, 3.78814, -0.00397843)
+transform = Transform3D(-0.984532, -0.175033, 0.00774481, 0.175045, -0.98456, 0.000840127, 0.00747818, 0.00218282, 0.999969, -0.422317, 3.8983, -0.00509345)
 bone_name = "spine.007"
 bone_idx = 6
 script = ExtResource("4_e2784")
