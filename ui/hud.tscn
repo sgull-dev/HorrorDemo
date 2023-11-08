@@ -58,6 +58,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_ggd5o")
 
 [node name="ReturnButton" type="Button" parent="PageViewer"]
+layout_mode = 0
 offset_left = 1228.0
 offset_top = 121.0
 offset_right = 1282.0
@@ -190,11 +191,11 @@ text = "Open Lock"
 
 [node name="NoSFX" type="AudioStreamPlayer" parent="LockViewer/Buttons/OpenButton"]
 stream = ExtResource("5_kk3kl")
-volume_db = -8.0
+volume_db = -12.0
 
 [node name="YesSFX" type="AudioStreamPlayer" parent="LockViewer/Buttons/OpenButton"]
 stream = ExtResource("6_1mkp2")
-volume_db = -5.0
+volume_db = -12.0
 
 [node name="InsertKeyButton" type="TextureButton" parent="LockViewer/Buttons"]
 layout_mode = 0
@@ -239,6 +240,7 @@ text = "X"
 
 [node name="TurnSFX" type="AudioStreamPlayer" parent="LockViewer/Buttons"]
 stream = ExtResource("7_b1fa2")
+volume_db = -5.0
 
 [node name="KeyImg" type="TextureRect" parent="LockViewer"]
 visible = false
@@ -255,7 +257,7 @@ texture = ExtResource("5_b3s4r")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="LockViewer/KeyImg"]
 stream = ExtResource("8_rdfna")
-volume_db = -6.0
+volume_db = -18.0
 
 [node name="WinScreen" type="Control" parent="."]
 visible = false

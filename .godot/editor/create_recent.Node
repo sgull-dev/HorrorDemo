@@ -1,3 +1,7 @@
+MeshInstance3D
+Sprite3D
+CollisionShape3D
+CharacterBody3D
 AudioStreamPlayer
 Node3D
 AudioStreamPlayer3D
@@ -10,7 +14,6 @@ RichTextLabel
 ColorRect
 Control
 TextureButton
-CollisionShape3D
 Area3D
 OmniLight3D
 Camera3D
@@ -27,6 +30,3 @@ CSGCylinder3D
 StaticBody3D
 SpotLight3D
 DirectionalLight3D
-CyclopsBlocks
-CharacterBody3D
-WorldEnvironment

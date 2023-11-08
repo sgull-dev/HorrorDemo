@@ -1,4 +1,4 @@
-res://ui/hud.tscn
+res://stages/stage_1.tscn
 res://addons/cyclops_level_builder/shaders/outline_shader.tres
 res://addons/cyclops_level_builder/docks/material_palette/thumbnail_selected_theme.tres
 res://addons/cyclops_level_builder/docks/material_palette/thumbnail_normal_theme.tres
@@ -7,9 +7,6 @@ res://mat/ground.tres
 res://mat/brick.tres
 res://mat/gobble.tres
 res://env/bg/tentacle_alpha.tres
-res://stages/stage_1.tscn
 res://player/player.tscn
-res://ui/ui_page_viewer.gd
-res://interactables/paper.gd
-res://player/player_sfx.gd
-res://scripts/camera/camera_fp.gd
+res://ui/hud.tscn
+res://enemy/enemy_hooded.tscn
