@@ -5,10 +5,12 @@ extends Node3D
 var can_pickup := false
 
 var data
+var paper_hud
 
 
 func _ready():
 	data = GameData.get_current_stage().get_node("Systems/PaperData")
+	paper_hud = GameData.get_current_stage().get_node("HUD/PageViewer")
 
 
 func _input(event):
@@ -22,6 +24,8 @@ func pick_up():
 	#add paper to data with paper_index
 	data.papers[paper_index] = true
 	data.got_paper.emit(paper_index)
+	#flash hud
+	paper_hud.flash_paper(paper_index)
 	queue_free()
 
 

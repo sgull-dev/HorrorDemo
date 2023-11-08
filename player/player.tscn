@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://do7tf4v7i7ttr"]
+[gd_scene load_steps=7 format=3 uid="uid://do7tf4v7i7ttr"]
 
 [ext_resource type="Script" path="res://scripts/camera/camera_fp.gd" id="1_a4mqt"]
 [ext_resource type="Script" path="res://player/player_stats.gd" id="2_og1fs"]
+[ext_resource type="Script" path="res://player/player_sfx.gd" id="3_i6lri"]
+[ext_resource type="AudioStream" uid="uid://uoq86g2hd3h7" path="res://assets/sfx/walk_mono.mp3" id="4_6w3ru"]
+[ext_resource type="AudioStream" uid="uid://cdugpch47o7xk" path="res://assets/sfx/run_mono2.mp3" id="5_1w3cs"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tjbal"]
 height = 1.8234
@@ -9,7 +12,8 @@ height = 1.8234
 [node name="Player" type="CharacterBody3D"]
 collision_layer = 8
 script = ExtResource("1_a4mqt")
-move_speed = 200.0
+move_speed = 150.0
+run_speed = 400.0
 look_speed = 2.0
 jump_height = 2.0
 jump_time_to_peak = 0.4
@@ -33,3 +37,24 @@ spot_angle = 19.9046
 script = ExtResource("2_og1fs")
 stamina_gain = 10.0
 stamina_run_drain = 1.2
+
+[node name="SFXPlayer" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.17221, 0.787143, 0)
+script = ExtResource("3_i6lri")
+volume_level = -29
+
+[node name="WalkSFX" type="AudioStreamPlayer3D" parent="SFXPlayer"]
+transform = Transform3D(-0.998733, -0.0192025, -0.0465057, 0.0203434, -0.999501, -0.0241856, -0.046018, -0.025101, 0.998625, -1.14726, -0.109212, 0)
+stream = ExtResource("4_6w3ru")
+volume_db = -12.0
+pitch_scale = 1.2
+emission_angle_enabled = true
+emission_angle_degrees = 44.0
+
+[node name="RunSFX" type="AudioStreamPlayer3D" parent="SFXPlayer"]
+transform = Transform3D(0.9941, 0, -0.108468, 0, 1, 0, 0.108468, 0, 0.9941, -1.11921, 0.0742088, 0)
+stream = ExtResource("5_1w3cs")
+volume_db = -12.0
+pitch_scale = 1.2
+max_distance = 9.85
+emission_angle_enabled = true

@@ -1,8 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://jd2jmvbr5cyk"]
+[gd_scene load_steps=13 format=3 uid="uid://jd2jmvbr5cyk"]
 
 [ext_resource type="Script" path="res://ui/StaminaBar.gd" id="1_1tstm"]
+[ext_resource type="Script" path="res://ui/ui_page_viewer.gd" id="2_5f1kk"]
 [ext_resource type="Script" path="res://ui/ui_lock.gd" id="2_gtfxa"]
 [ext_resource type="Texture2D" uid="uid://cp5ykbufygt4o" path="res://assets/ui/lock_view_2.jpg" id="3_8j4bh"]
+[ext_resource type="Texture2D" uid="uid://occ7nhcv68sk" path="res://assets/ui/pages/page_1.png" id="3_ggd5o"]
 [ext_resource type="Theme" uid="uid://c3yqphcekdto4" path="res://mat/text_theme.tres" id="4_d65b1"]
 [ext_resource type="Texture2D" uid="uid://b0ykvt16lmy43" path="res://assets/ui/key_in_hole.png" id="5_b3s4r"]
 [ext_resource type="AudioStream" uid="uid://tegfnh73vv0y" path="res://assets/sfx/Wood Block2.wav" id="5_kk3kl"]
@@ -31,15 +33,90 @@ offset_bottom = 36.0
 script = ExtResource("1_1tstm")
 
 [node name="PageViewer" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_5f1kk")
+
+[node name="PaperImg" type="TextureRect" parent="PageViewer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -510.0
+offset_top = -514.0
+offset_right = 1538.0
+offset_bottom = 1534.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_ggd5o")
+
+[node name="ReturnButton" type="Button" parent="PageViewer"]
+offset_left = 1228.0
+offset_top = 121.0
+offset_right = 1282.0
+offset_bottom = 218.0
+theme = ExtResource("4_d65b1")
+theme_override_colors/font_color = Color(0.8, 0.709804, 0.388235, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_font_sizes/font_size = 76
+text = "X"
+
+[node name="PaperViewButtons" type="Panel" parent="PageViewer"]
+custom_minimum_size = Vector2(273.795, 369.785)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 33.0
+offset_top = -20.0
+offset_right = 73.0
+offset_bottom = 20.0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PageViewer/PaperViewButtons"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button1" type="Button" parent="PageViewer/PaperViewButtons/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 7
+text = "Paper 1"
+
+[node name="Button2" type="Button" parent="PageViewer/PaperViewButtons/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 7
+text = "Paper 2
+"
+
+[node name="Button3" type="Button" parent="PageViewer/PaperViewButtons/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 7
+text = "Paper 3"
+
+[node name="Button4" type="Button" parent="PageViewer/PaperViewButtons/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 7
+text = "Paper 4"
+
+[node name="Button5" type="Button" parent="PageViewer/PaperViewButtons/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 7
+text = "Paper 5"
 
 [node name="LockViewer" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -233,6 +310,12 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Quit Game"
 
+[connection signal="button_down" from="PageViewer/ReturnButton" to="PageViewer" method="_on_return_button_button_down"]
+[connection signal="button_down" from="PageViewer/PaperViewButtons/VBoxContainer/Button1" to="PageViewer" method="_on_button_1_button_down"]
+[connection signal="button_down" from="PageViewer/PaperViewButtons/VBoxContainer/Button2" to="PageViewer" method="_on_button_2_button_down"]
+[connection signal="button_down" from="PageViewer/PaperViewButtons/VBoxContainer/Button3" to="PageViewer" method="_on_button_3_button_down"]
+[connection signal="button_down" from="PageViewer/PaperViewButtons/VBoxContainer/Button4" to="PageViewer" method="_on_button_4_button_down"]
+[connection signal="button_down" from="PageViewer/PaperViewButtons/VBoxContainer/Button5" to="PageViewer" method="_on_button_5_button_down"]
 [connection signal="button_down" from="LockViewer/Buttons/OpenButton" to="LockViewer" method="_on_open_button_button_down"]
 [connection signal="button_down" from="LockViewer/Buttons/InsertKeyButton" to="LockViewer" method="_on_insert_key_button_button_down"]
 [connection signal="button_down" from="LockViewer/Buttons/Num1Button" to="LockViewer" method="_on_num_1_button_button_down"]

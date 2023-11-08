@@ -14,6 +14,7 @@ extends CharacterBody3D
 
 var can_jump := true
 var is_running := false
+var move_v
 
 var is_player = true
 
@@ -36,7 +37,7 @@ func _physics_process(delta):
 	#get movement input
 	var input_v = Input.get_vector("move_l", "move_r", "move_f", "move_b")
 	#convert to move vector
-	var move_v
+
 	if input_v.length() >= 0.1:
 		move_v = Vector3(input_v.x, 0, input_v.y).normalized() * get_move_speed() * delta
 	else:
