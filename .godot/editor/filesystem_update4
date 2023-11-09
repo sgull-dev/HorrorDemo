@@ -1,12 +1,15 @@
-res://stages/stage_1.tscn
+res://enemy/enemy_hooded.tscn
 res://addons/cyclops_level_builder/shaders/outline_shader.tres
 res://addons/cyclops_level_builder/docks/material_palette/thumbnail_selected_theme.tres
 res://addons/cyclops_level_builder/docks/material_palette/thumbnail_normal_theme.tres
 res://mat/text_theme.tres
+res://ui/chroma.gdshader
 res://mat/ground.tres
 res://mat/brick.tres
 res://mat/gobble.tres
 res://env/bg/tentacle_alpha.tres
+res://enemy/enemy_hooded.gd
+res://stages/stage_1.tscn
 res://player/player.tscn
 res://ui/hud.tscn
-res://enemy/enemy_hooded.tscn
+res://ui/load.tscn

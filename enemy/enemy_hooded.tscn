@@ -1,6 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://baxjnj4d6ij30"]
+[gd_scene load_steps=11 format=3 uid="uid://baxjnj4d6ij30"]
 
 [ext_resource type="Texture2D" uid="uid://c2wcni0rfcyv6" path="res://assets/enemy/horror_enemy.png" id="1_1d32f"]
+[ext_resource type="Script" path="res://enemy/enemy_hooded.gd" id="1_khj82"]
+[ext_resource type="Script" path="res://enemy/enemy_sfx.gd" id="3_13n2p"]
+[ext_resource type="AudioStream" uid="uid://dntf1mlkdomwy" path="res://assets/sfx/enemy/446071__sophiemezam__breathing.wav" id="4_ttro1"]
+[ext_resource type="AudioStream" uid="uid://c6f6bb0mmf8wu" path="res://assets/sfx/enemy/416076__inspectorj__breathing-tremolo-a.wav" id="5_fcah6"]
+[ext_resource type="AudioStream" uid="uid://ba4wd23r0io0" path="res://assets/sfx/screech_2.mp3" id="6_3vre8"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_j7wao"]
 
@@ -14,7 +19,11 @@ billboard_mode = 2
 material = SubResource("StandardMaterial3D_2y8q5")
 size = Vector2(1.5, 3)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_0yxop"]
+radius = 2.31701
+
 [node name="EnemyHooded" type="CharacterBody3D"]
+script = ExtResource("1_khj82")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -28,3 +37,37 @@ texture = ExtResource("1_1d32f")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25643, 0)
 mesh = SubResource("QuadMesh_t2w7a")
+
+[node name="EnemySFX" type="Node3D" parent="."]
+script = ExtResource("3_13n2p")
+
+[node name="Breath1" type="AudioStreamPlayer3D" parent="EnemySFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.05797, 0)
+stream = ExtResource("4_ttro1")
+volume_db = -9.79
+
+[node name="Breath2" type="AudioStreamPlayer3D" parent="EnemySFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.05797, 0)
+stream = ExtResource("5_fcah6")
+volume_db = -19.735
+
+[node name="Timer" type="Timer" parent="EnemySFX"]
+
+[node name="Timer2" type="Timer" parent="EnemySFX"]
+
+[node name="Claw" type="AudioStreamPlayer3D" parent="EnemySFX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.17383, 0.357086)
+stream = ExtResource("6_3vre8")
+volume_db = -8.0
+
+[node name="JumpScareArea" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="JumpScareArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01094, 0)
+shape = SubResource("SphereShape3D_0yxop")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[connection signal="body_entered" from="JumpScareArea" to="." method="_on_jump_scare_area_body_entered"]

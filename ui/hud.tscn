@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://jd2jmvbr5cyk"]
+[gd_scene load_steps=19 format=3 uid="uid://jd2jmvbr5cyk"]
 
 [ext_resource type="Script" path="res://ui/StaminaBar.gd" id="1_1tstm"]
 [ext_resource type="Script" path="res://ui/ui_page_viewer.gd" id="2_5f1kk"]
@@ -12,6 +12,17 @@
 [ext_resource type="Script" path="res://ui/ui_win.gd" id="6_qkk3y"]
 [ext_resource type="AudioStream" uid="uid://1lbjebgumkin" path="res://assets/sfx/Abstract2.wav" id="7_b1fa2"]
 [ext_resource type="AudioStream" uid="uid://cgi2ryldfd735" path="res://assets/sfx/key.mp3" id="8_rdfna"]
+[ext_resource type="VideoStream" path="res://assets/ui/video/output.ogv" id="13_ap12v"]
+[ext_resource type="Script" path="res://ui/ui_lose.gd" id="13_sfsm5"]
+[ext_resource type="Shader" path="res://ui/chroma.gdshader" id="13_shdql"]
+[ext_resource type="Texture2D" uid="uid://c2wcni0rfcyv6" path="res://assets/enemy/horror_enemy.png" id="16_iq1nr"]
+[ext_resource type="AudioStream" uid="uid://wyaa1v1imu27" path="res://assets/sfx/Drop 3.wav" id="17_lmflo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h8rwb"]
+shader = ExtResource("13_shdql")
+shader_parameter/chroma_key_color = Color(0.105882, 0.980392, 0.0509804, 1)
+shader_parameter/pickup_range = 0.809
+shader_parameter/fade_amount = 0.477
 
 [node name="HUD" type="CanvasLayer"]
 process_mode = 3
@@ -33,6 +44,7 @@ offset_bottom = 36.0
 script = ExtResource("1_1tstm")
 
 [node name="PageViewer" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -312,6 +324,78 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Quit Game"
 
+[node name="LoseScreen" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("13_sfsm5")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="LoseScreen"]
+material = SubResource("ShaderMaterial_h8rwb")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.505, 1.505)
+stream = ExtResource("13_ap12v")
+
+[node name="TextureRect" type="TextureRect" parent="LoseScreen"]
+modulate = Color(0.678431, 0.184314, 0.172549, 1)
+layout_mode = 0
+offset_left = -111.0
+offset_top = -323.0
+offset_right = 1937.0
+offset_bottom = 3773.0
+texture = ExtResource("16_iq1nr")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="LoseScreen"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -181.0
+offset_right = 160.0
+offset_bottom = -92.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("4_d65b1")
+theme_override_colors/default_color = Color(0.631373, 0.129412, 0.117647, 1)
+theme_override_font_sizes/normal_font_size = 76
+text = "You died."
+fit_content = true
+autowrap_mode = 0
+
+[node name="RestartButton" type="Button" parent="LoseScreen"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -70.0
+offset_right = 24.0
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("4_d65b1")
+theme_override_colors/font_color = Color(0.545098, 0.211765, 0.152941, 1)
+theme_override_font_sizes/font_size = 31
+text = "Retry"
+
+[node name="JumpscareSFX" type="AudioStreamPlayer" parent="LoseScreen"]
+stream = ExtResource("17_lmflo")
+volume_db = -9.08
+
 [connection signal="button_down" from="PageViewer/ReturnButton" to="PageViewer" method="_on_return_button_button_down"]
 [connection signal="button_down" from="PageViewer/PaperViewButtons/VBoxContainer/Button1" to="PageViewer" method="_on_button_1_button_down"]
 [connection signal="button_down" from="PageViewer/PaperViewButtons/VBoxContainer/Button2" to="PageViewer" method="_on_button_2_button_down"]
@@ -325,3 +409,4 @@ text = "Quit Game"
 [connection signal="button_down" from="LockViewer/Buttons/Num3Button" to="LockViewer" method="_on_num_3_button_button_down"]
 [connection signal="button_down" from="LockViewer/Buttons/ReturnButton" to="LockViewer" method="_on_return_button_button_down"]
 [connection signal="button_down" from="WinScreen/Button" to="WinScreen" method="_on_button_button_down"]
+[connection signal="button_down" from="LoseScreen/RestartButton" to="LoseScreen" method="_on_restart_button_button_down"]

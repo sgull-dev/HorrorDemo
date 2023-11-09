@@ -1,3 +1,5 @@
+res://ui
+res://scripts/sound
 res://enemy
 res://env/bg
 res://mat
@@ -5,6 +7,5 @@ res://env
 res://scripts/game
 res://assets/bg
 res://interactables
-res://ui
 res://player
 res://stages

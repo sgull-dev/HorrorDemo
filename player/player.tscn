@@ -12,7 +12,7 @@ height = 1.8234
 [node name="Player" type="CharacterBody3D"]
 collision_layer = 8
 script = ExtResource("1_a4mqt")
-move_speed = 150.0
+move_speed = 176.4
 run_speed = 400.0
 look_speed = 2.0
 jump_height = 2.0
@@ -35,7 +35,7 @@ spot_angle = 19.9046
 
 [node name="PlayerStats" type="Node" parent="."]
 script = ExtResource("2_og1fs")
-stamina_gain = 10.0
+stamina_gain = 12.875
 stamina_run_drain = 1.2
 
 [node name="SFXPlayer" type="Node3D" parent="."]
