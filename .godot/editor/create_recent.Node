@@ -1,3 +1,6 @@
+CSGBox3D
+CollisionShape3D
+Area3D
 NavigationAgent3D
 RichTextLabel
 Timer
@@ -8,8 +11,6 @@ Button
 TextureRect
 VideoStreamPlayer
 Control
-CollisionShape3D
-Area3D
 Node3D
 NavigationRegion3D
 MeshInstance3D
@@ -27,7 +28,5 @@ WiggleBone
 AnimationPlayer
 AnimationTree
 ProtonScatter
-CSGBox3D
 ProgressBar
 CanvasLayer
-CSGCylinder3D

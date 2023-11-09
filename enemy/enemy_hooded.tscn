@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://baxjnj4d6ij30"]
+[gd_scene load_steps=12 format=3 uid="uid://baxjnj4d6ij30"]
 
 [ext_resource type="Texture2D" uid="uid://c2wcni0rfcyv6" path="res://assets/enemy/horror_enemy.png" id="1_1d32f"]
 [ext_resource type="Script" path="res://enemy/enemy_hooded.gd" id="1_khj82"]
@@ -20,10 +20,14 @@ material = SubResource("StandardMaterial3D_2y8q5")
 size = Vector2(1.5, 3)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_0yxop"]
-radius = 2.31701
+radius = 1.83433
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vqcn3"]
+radius = 7.62712
 
 [node name="EnemyHooded" type="CharacterBody3D"]
 script = ExtResource("1_khj82")
+chase_speed = 250.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -70,4 +74,13 @@ shape = SubResource("SphereShape3D_0yxop")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
+[node name="PlayerSeeArea" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerSeeArea"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0, 1.13538, 0)
+shape = SubResource("SphereShape3D_vqcn3")
+
 [connection signal="body_entered" from="JumpScareArea" to="." method="_on_jump_scare_area_body_entered"]
+[connection signal="body_entered" from="PlayerSeeArea" to="." method="_on_player_see_area_body_entered"]
