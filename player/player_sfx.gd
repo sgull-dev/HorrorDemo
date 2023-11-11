@@ -17,7 +17,7 @@ var interrupt_2 := false
 
 
 func _process(delta):
-	print(current_track)
+	#print(current_track)
 	#match state and player movement state to blend track volumes
 	if current_track == 0:
 		if player.move_v.length() <= 0.1:

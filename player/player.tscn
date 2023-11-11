@@ -46,18 +46,18 @@ volume_level = -36
 [node name="WalkSFX" type="AudioStreamPlayer3D" parent="SFXPlayer"]
 transform = Transform3D(-0.998733, -0.0192025, -0.0465057, 0.0203434, -0.999501, -0.0241856, -0.046018, -0.025101, 0.998625, -1.14726, -0.109212, 0)
 stream = ExtResource("4_6w3ru")
-volume_db = -12.0
+volume_db = -8.71
 pitch_scale = 1.2
 emission_angle_enabled = true
 emission_angle_degrees = 44.0
-attenuation_filter_cutoff_hz = 1855.0
+attenuation_filter_cutoff_hz = 2890.0
 attenuation_filter_db = -13.0
 
 [node name="RunSFX" type="AudioStreamPlayer3D" parent="SFXPlayer"]
 transform = Transform3D(0.9941, 0, -0.108468, 0, 1, 0, 0.108468, 0, 0.9941, -1.11921, 0.0742088, 0)
 stream = ExtResource("5_1w3cs")
-volume_db = -12.0
+volume_db = -8.71
 pitch_scale = 1.2
 max_distance = 9.85
 emission_angle_enabled = true
-attenuation_filter_cutoff_hz = 1865.0
+attenuation_filter_cutoff_hz = 2890.0

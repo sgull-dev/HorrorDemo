@@ -55,7 +55,7 @@ func insert_key():
 
 
 func open_lock():
-	if data.papers[4] == true:
+	if key_inserted:
 		if lock_combination[0] == correct_combination[0]:
 			if lock_combination[1] == correct_combination[1]:
 				if lock_combination[2] == correct_combination[2]:

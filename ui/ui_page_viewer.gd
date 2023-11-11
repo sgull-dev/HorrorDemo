@@ -54,6 +54,7 @@ func flash_paper(paper_index):
 	open_menu()
 	side_bar.visible = false
 	set_paper_texture(paper_index)
+	$AudioStreamPlayer.play()
 
 
 func set_paper_texture(paper_index):

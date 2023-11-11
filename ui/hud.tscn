@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://jd2jmvbr5cyk"]
+[gd_scene load_steps=20 format=3 uid="uid://jd2jmvbr5cyk"]
 
 [ext_resource type="Script" path="res://ui/StaminaBar.gd" id="1_1tstm"]
 [ext_resource type="Script" path="res://ui/ui_page_viewer.gd" id="2_5f1kk"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://occ7nhcv68sk" path="res://assets/ui/pages/page_1.png" id="3_ggd5o"]
 [ext_resource type="Theme" uid="uid://c3yqphcekdto4" path="res://mat/text_theme.tres" id="4_d65b1"]
 [ext_resource type="Texture2D" uid="uid://b0ykvt16lmy43" path="res://assets/ui/key_in_hole.png" id="5_b3s4r"]
+[ext_resource type="AudioStream" uid="uid://dims1meb6fc5c" path="res://assets/sfx/paper_2.mp3" id="5_heotb"]
 [ext_resource type="AudioStream" uid="uid://tegfnh73vv0y" path="res://assets/sfx/Wood Block2.wav" id="5_kk3kl"]
 [ext_resource type="AudioStream" uid="uid://dyklicxq5ima4" path="res://assets/sfx/lock_open.wav" id="6_1mkp2"]
 [ext_resource type="Script" path="res://ui/ui_win.gd" id="6_qkk3y"]
@@ -128,8 +129,11 @@ layout_mode = 2
 size_flags_vertical = 7
 text = "Paper 5"
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PageViewer"]
+stream = ExtResource("5_heotb")
+volume_db = -5.0
+
 [node name="LockViewer" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -255,7 +259,6 @@ stream = ExtResource("7_b1fa2")
 volume_db = -5.0
 
 [node name="KeyImg" type="TextureRect" parent="LockViewer"]
-visible = false
 modulate = Color(0.52549, 0.533333, 0.396078, 1)
 layout_mode = 0
 offset_left = 549.0
@@ -272,7 +275,6 @@ stream = ExtResource("8_rdfna")
 volume_db = -18.0
 
 [node name="WinScreen" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -325,7 +327,6 @@ grow_vertical = 2
 text = "Quit Game"
 
 [node name="LoseScreen" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -394,7 +395,7 @@ text = "Retry"
 
 [node name="JumpscareSFX" type="AudioStreamPlayer" parent="LoseScreen"]
 stream = ExtResource("17_lmflo")
-volume_db = -9.08
+volume_db = -5.0
 
 [connection signal="button_down" from="PageViewer/ReturnButton" to="PageViewer" method="_on_return_button_button_down"]
 [connection signal="button_down" from="PageViewer/PaperViewButtons/VBoxContainer/Button1" to="PageViewer" method="_on_button_1_button_down"]

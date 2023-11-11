@@ -26,6 +26,7 @@ func pick_up():
 	data.got_paper.emit(paper_index)
 	#flash hud
 	paper_hud.flash_paper(paper_index)
+	
 	queue_free()
 
 

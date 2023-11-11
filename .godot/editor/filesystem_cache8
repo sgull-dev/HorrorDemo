@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699521007
+::res://::1699735232
 icon.svg::CompressedTexture2D::5087123716694208602::1698763959::1698763963::1::::<><>::
 README.md::TextFile::-1::1698766184::0::1::::<><>::
 ::res://addons/::1699126737
@@ -83,7 +83,7 @@ resource_inspector.gd::GDScript::-1::1683787522::0::1::::ResourceInspector<>Cont
 resource_inspector.tscn::PackedScene::6729863528294998586::1683787522::0::1::::<><>::res://addons/cyclops_level_builder/controls/resource_inspector/resource_inspector.gd
 ::res://addons/cyclops_level_builder/doc/::1698764652
 ::res://addons/cyclops_level_builder/docks/::1698764652
-::res://addons/cyclops_level_builder/docks/material_palette/::1699432852
+::res://addons/cyclops_level_builder/docks/material_palette/::1699724568
 material_palette_viewport.gd::GDScript::-1::1683787522::0::1::::MaterialPaletteViewport<>Control<>::
 material_palette_viewport.tscn::PackedScene::1036570676893576714::1683787522::0::1::::<><>::res://addons/cyclops_level_builder/docks/material_palette/material_palette_viewport.gd<>res://addons/cyclops_level_builder/docks/material_palette/thumbnail_group.gd
 material_snapshot.gd::GDScript::-1::1683787522::0::1::::MaterialShapshot<>SubViewport<>::
@@ -91,8 +91,8 @@ material_snapshot.tscn::PackedScene::-1::1683787522::0::1::::<><>::res://addons/
 material_thumbnail.gd::GDScript::-1::1683787522::0::1::::MaterialThumbnail<>Control<>::
 material_thumbnail.tscn::PackedScene::-1::1683787522::0::1::::<><>::res://addons/cyclops_level_builder/docks/material_palette/material_thumbnail.gd<>uid://c0gpl22e2g6ay
 thumbnail_group.gd::GDScript::-1::1683787522::0::1::::ThumbnailGroup<>Resource<>::
-thumbnail_normal_theme.tres::Theme::4058405243379725578::1699432852::0::1::::<><>::
-thumbnail_selected_theme.tres::Theme::6540880583544088756::1699432852::0::1::::<><>::
+thumbnail_normal_theme.tres::Theme::4058405243379725578::1699724568::0::1::::<><>::
+thumbnail_selected_theme.tres::Theme::6540880583544088756::1699724568::0::1::::<><>::
 ::res://addons/cyclops_level_builder/docks/material_palette/commands/::1698764652
 cmd_mat_dock_add_materials.gd::GDScript::-1::1683787522::0::1::::CommandMaterialDockAddMaterials<>CyclopsCommand<>::
 cmd_mat_dock_remove_materials.gd::GDScript::-1::1683787522::0::1::::CommandMaterialDockRemoveMaterials<>CyclopsCommand<>::
@@ -145,8 +145,8 @@ intersect_results.gd::GDScript::-1::1683787522::0::1::::IntersectResults<>RefCou
 ::res://addons/cyclops_level_builder/resources/::1698764652
 block_data.gd::GDScript::-1::1683787522::0::1::::BlockData<>Resource<>::
 convex_block_data.gd::GDScript::-1::1683787522::0::1::::ConvexBlockData<>Resource<>::
-::res://addons/cyclops_level_builder/shaders/::1699432852
-outline_shader.tres::VisualShader::4976330123338311102::1699432852::0::1::::<><>::
+::res://addons/cyclops_level_builder/shaders/::1699724568
+outline_shader.tres::VisualShader::4976330123338311102::1699724568::0::1::::<><>::
 tool_outline_shader.tres::VisualShader::6796597932207006307::1683787522::0::1::::<><>::
 ::res://addons/cyclops_level_builder/tools/::1698764652
 cyclops_tool.gd::GDScript::-1::1683787522::0::1::::CyclopsTool<>Resource<>::
@@ -515,9 +515,9 @@ page_4.png::CompressedTexture2D::6323712146000035922::1699264310::1699265773::1:
 page_5.png::CompressedTexture2D::2466524778771275329::1699264894::1699265773::1::::<><>::
 ::res://assets/ui/video/::1699452911
 output.ogv::VideoStreamTheora::-1::1699452882::0::1::::<><>::
-::res://enemy/::1699454604
-enemy_hooded.gd::GDScript::-1::1699453753::0::1::::<>CharacterBody3D<>::
-enemy_hooded.tscn::PackedScene::2434471557979675589::1699454604::0::1::::<><>::uid://c2wcni0rfcyv6::::res://assets/enemy/horror_enemy.png<>res://enemy/enemy_hooded.gd<>res://enemy/enemy_sfx.gd<>uid://dntf1mlkdomwy::::res://assets/sfx/enemy/446071__sophiemezam__breathing.wav<>uid://c6f6bb0mmf8wu::::res://assets/sfx/enemy/416076__inspectorj__breathing-tremolo-a.wav<>uid://ba4wd23r0io0::::res://assets/sfx/screech_2.mp3
+::res://enemy/::1699727454
+enemy_hooded.gd::GDScript::-1::1699531046::0::1::::<>CharacterBody3D<>::
+enemy_hooded.tscn::PackedScene::2434471557979675589::1699727454::0::1::::<><>::uid://c2wcni0rfcyv6::::res://assets/enemy/horror_enemy.png<>res://enemy/enemy_hooded.gd<>res://enemy/enemy_sfx.gd<>uid://dntf1mlkdomwy::::res://assets/sfx/enemy/446071__sophiemezam__breathing.wav<>uid://c6f6bb0mmf8wu::::res://assets/sfx/enemy/416076__inspectorj__breathing-tremolo-a.wav<>uid://ba4wd23r0io0::::res://assets/sfx/screech_2.mp3
 enemy_sfx.gd::GDScript::-1::1699445148::0::1::::<>Node3D<>::
 ::res://env/::1699273619
 lock.gd::GDScript::-1::1699215087::0::1::::<>Node3D<>::
@@ -526,7 +526,7 @@ tree_1.tscn::PackedScene::8548592215298231057::1699173567::0::1::::<><>::uid://c
 tree_2.tscn::PackedScene::6166462769513136131::1699173567::0::1::::<><>::uid://clhiod4qqvvmm
 tree_3.tscn::PackedScene::7179881230810189587::1698918122::0::1::::<><>::uid://bqvldn8jeg5eg
 tree_4.tscn::PackedScene::5913211910320327667::1698918122::0::1::::<><>::uid://db1jqp77uod60
-::res://env/bg/::1699432852
+::res://env/bg/::1699724568
 scare_sfx.gd::GDScript::-1::1699277275::0::1::::<>Area3D<>::
 tentacle.gd::GDScript::-1::1698842964::0::1::::<>CSGCylinder3D<>::
 tentacle.tscn::PackedScene::8816410518638103792::1698918122::0::1::::<><>::res://env/bg/tentacle.gd
@@ -536,17 +536,17 @@ tentacle_2.tscn::PackedScene::2541345543384347498::1699184991::0::1::::<><>::res
 tentacle_2b.gd::GDScript::-1::1699281919::0::1::::<>Node3D<>::
 tentacle_3.gd::GDScript::-1::1699215294::0::1::::<>Node3D<>::
 tentacle_3.tscn::PackedScene::3106339710474060460::1699273619::0::1::::<><>::res://env/bg/tentacle_3.gd<>uid://dqyvo86ol6shx
-tentacle_alpha.tres::StandardMaterial3D::2215738408117366474::1699432852::0::1::::<><>::uid://dqyvo86ol6shx::::res://assets/bg/tentacle_2_bg_tentacle_2.png
-::res://interactables/::1699376217
-paper.gd::GDScript::-1::1699376217::0::1::::<>Node3D<>::
-paper.tscn::PackedScene::8716249104256300588::1699213519::0::1::::<><>::res://interactables/paper.gd
-::res://mat/::1699432852
-brick.tres::StandardMaterial3D::2093726538574491407::1699432852::0::1::::<><>::uid://bcx61h8tfnycv::::res://assets/env/textures/Bricks075B_2K-PNG_Color.png<>uid://dudkvs6l24o27::::res://assets/env/textures/Bricks075B_2K-PNG_AmbientOcclusion.png<>uid://dx3d38sq1nhf0::::res://assets/env/textures/Bricks075B_2K-PNG_NormalGL.png<>uid://c67vxml42bds5::::res://assets/env/textures/Bricks075B_2K-PNG_Roughness.png
-gobble.tres::StandardMaterial3D::24782750840566131::1699432852::0::1::::<><>::uid://7mkgavs852qj::::res://assets/env/textures/Tiles130_2K-PNG_Color.png<>uid://c06y21lbjxjy4::::res://assets/env/textures/Tiles130_2K-PNG_AmbientOcclusion.png<>uid://dgnej5112sry0::::res://assets/env/textures/Tiles130_2K-PNG_NormalGL.png
-ground.tres::StandardMaterial3D::7798130255477124799::1699432852::0::1::::<><>::uid://b64dnde40ej4v::::res://assets/env/textures/Ground048_2K-PNG_Color.png<>uid://catx32uj4qx::::res://assets/env/textures/Ground048_2K-PNG_NormalGL.png<>uid://bk2lxp87k7bby::::res://assets/env/textures/Ground048_2K-PNG_Roughness.png
-text_theme.tres::Theme::6788672685089685629::1699432852::0::1::::<><>::uid://nl4eu5s7ufhx::::res://assets/font/Arial Rounded MT Regular.ttf
-::res://player/::1699454603
-player.tscn::PackedScene::8209130059057708195::1699454603::0::1::::<><>::res://scripts/camera/camera_fp.gd<>res://player/player_stats.gd<>res://player/player_sfx.gd<>uid://uoq86g2hd3h7::::res://assets/sfx/walk_mono.mp3<>uid://cdugpch47o7xk::::res://assets/sfx/run_mono2.mp3
+tentacle_alpha.tres::StandardMaterial3D::2215738408117366474::1699724568::0::1::::<><>::uid://dqyvo86ol6shx::::res://assets/bg/tentacle_2_bg_tentacle_2.png
+::res://interactables/::1699727842
+paper.gd::GDScript::-1::1699727449::0::1::::<>Node3D<>::
+paper.tscn::PackedScene::8716249104256300588::1699727842::0::1::::<><>::res://interactables/paper.gd
+::res://mat/::1699724569
+brick.tres::StandardMaterial3D::2093726538574491407::1699724568::0::1::::<><>::uid://bcx61h8tfnycv::::res://assets/env/textures/Bricks075B_2K-PNG_Color.png<>uid://dudkvs6l24o27::::res://assets/env/textures/Bricks075B_2K-PNG_AmbientOcclusion.png<>uid://dx3d38sq1nhf0::::res://assets/env/textures/Bricks075B_2K-PNG_NormalGL.png<>uid://c67vxml42bds5::::res://assets/env/textures/Bricks075B_2K-PNG_Roughness.png
+gobble.tres::StandardMaterial3D::24782750840566131::1699724568::0::1::::<><>::uid://7mkgavs852qj::::res://assets/env/textures/Tiles130_2K-PNG_Color.png<>uid://c06y21lbjxjy4::::res://assets/env/textures/Tiles130_2K-PNG_AmbientOcclusion.png<>uid://dgnej5112sry0::::res://assets/env/textures/Tiles130_2K-PNG_NormalGL.png
+ground.tres::StandardMaterial3D::7798130255477124799::1699724569::0::1::::<><>::uid://b64dnde40ej4v::::res://assets/env/textures/Ground048_2K-PNG_Color.png<>uid://catx32uj4qx::::res://assets/env/textures/Ground048_2K-PNG_NormalGL.png<>uid://bk2lxp87k7bby::::res://assets/env/textures/Ground048_2K-PNG_Roughness.png
+text_theme.tres::Theme::6788672685089685629::1699724568::0::1::::<><>::uid://nl4eu5s7ufhx::::res://assets/font/Arial Rounded MT Regular.ttf
+::res://player/::1699727454
+player.tscn::PackedScene::8209130059057708195::1699727454::0::1::::<><>::res://scripts/camera/camera_fp.gd<>res://player/player_stats.gd<>res://player/player_sfx.gd<>uid://uoq86g2hd3h7::::res://assets/sfx/walk_mono.mp3<>uid://cdugpch47o7xk::::res://assets/sfx/run_mono2.mp3
 player_sfx.gd::GDScript::-1::1699383160::0::1::::<>Node3D<>::
 player_stats.gd::GDScript::-1::1698920019::0::1::::<>Node<>::
 ::res://scripts/::1699003252
@@ -559,15 +559,15 @@ stage.gd::GDScript::-1::1699453975::0::1::::<>Node3D<>::
 ::res://scripts/sound/::1699444000
 ambiance_horn.gd::GDScript::-1::1699444000::0::1::::<>AudioStreamPlayer3D<>::
 ambiance_player.gd::GDScript::-1::1699004132::0::1::::<>Node<>::
-::res://stages/::1699454603
-stage_1.tscn::PackedScene::6153182039763411486::1699454603::0::1::::<><>::res://scripts/game/stage.gd<>uid://do7tf4v7i7ttr::::res://player/player.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd<>uid://jd2jmvbr5cyk::::res://ui/hud.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_convex_block.gd<>res://addons/cyclops_level_builder/resources/convex_block_data.gd<>uid://djdqcijska56j::::res://mat/ground.tres<>uid://43hmt7ckaw0f::::res://mat/brick.tres<>uid://mafyska2wpf::::res://mat/gobble.tres<>res://scripts/game/paper_data.gd<>uid://c41d7jtcfsoxv::::res://assets/music/ambiance/amb_2.mp3<>uid://dt2acg6ywabk0::::res://env/tree_1.tscn<>uid://cqin0bc4gx43p::::res://env/tree_4.tscn<>uid://bqf7b021frfa0::::res://assets/sfx/enemy/267069__brainclaim__monster-tripod-horn.wav<>uid://daj8uhxcpci08::::res://env/tree_3.tscn<>res://scripts/sound/ambiance_horn.gd<>uid://ct4c0gpv21n04::::res://env/tree_2.tscn<>uid://dxuy81cx1312s::::res://env/bg/tentacle.tscn<>res://scripts/sound/ambiance_player.gd<>uid://b1x1dr2r7taor::::res://assets/music/ambiance/ambiance.mp3<>uid://bjd2jwhkl2kv0::::res://assets/music/ambiance/cave_ambiance_1.wav<>uid://bchbub2wy48dy::::res://env/bg/tentacle_2.tscn<>uid://bkiy7xeui35gi::::res://env/bg/tentacle_3.tscn<>res://env/bg/scare_sfx.gd<>uid://wyaa1v1imu27::::res://assets/sfx/Drop 3.wav<>uid://c44eryydhytls::::res://env/lock.tscn<>uid://baxjnj4d6ij30::::res://enemy/enemy_hooded.tscn<>uid://dwghl41nawli7::::res://interactables/paper.tscn
-::res://ui/::1699455137
-chroma.gdshader::Shader::-1::1699455137::0::1::::<><>::
-hud.tscn::PackedScene::639548819744739234::1699454620::0::1::::<><>::res://ui/StaminaBar.gd<>res://ui/ui_page_viewer.gd<>res://ui/ui_lock.gd<>uid://cp5ykbufygt4o::::res://assets/ui/lock_view_2.jpg<>uid://occ7nhcv68sk::::res://assets/ui/pages/page_1.png<>uid://c3yqphcekdto4::::res://mat/text_theme.tres<>uid://b0ykvt16lmy43::::res://assets/ui/key_in_hole.png<>uid://tegfnh73vv0y::::res://assets/sfx/Wood Block2.wav<>uid://dyklicxq5ima4::::res://assets/sfx/lock_open.wav<>res://ui/ui_win.gd<>uid://1lbjebgumkin::::res://assets/sfx/Abstract2.wav<>uid://cgi2ryldfd735::::res://assets/sfx/key.mp3<>res://assets/ui/video/output.ogv<>res://ui/ui_lose.gd<>res://ui/chroma.gdshader<>uid://c2wcni0rfcyv6::::res://assets/enemy/horror_enemy.png<>uid://wyaa1v1imu27::::res://assets/sfx/Drop 3.wav
+::res://stages/::1699727454
+stage_1.tscn::PackedScene::6153182039763411486::1699727454::0::1::::<><>::res://scripts/game/stage.gd<>uid://do7tf4v7i7ttr::::res://player/player.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd<>uid://jd2jmvbr5cyk::::res://ui/hud.tscn<>res://addons/cyclops_level_builder/nodes/cyclops_convex_block.gd<>res://addons/cyclops_level_builder/resources/convex_block_data.gd<>uid://djdqcijska56j::::res://mat/ground.tres<>uid://43hmt7ckaw0f::::res://mat/brick.tres<>uid://mafyska2wpf::::res://mat/gobble.tres<>res://scripts/game/paper_data.gd<>uid://c41d7jtcfsoxv::::res://assets/music/ambiance/amb_2.mp3<>uid://dt2acg6ywabk0::::res://env/tree_1.tscn<>uid://cqin0bc4gx43p::::res://env/tree_4.tscn<>uid://bqf7b021frfa0::::res://assets/sfx/enemy/267069__brainclaim__monster-tripod-horn.wav<>uid://daj8uhxcpci08::::res://env/tree_3.tscn<>res://scripts/sound/ambiance_horn.gd<>uid://ct4c0gpv21n04::::res://env/tree_2.tscn<>uid://dxuy81cx1312s::::res://env/bg/tentacle.tscn<>res://scripts/sound/ambiance_player.gd<>uid://b1x1dr2r7taor::::res://assets/music/ambiance/ambiance.mp3<>uid://bjd2jwhkl2kv0::::res://assets/music/ambiance/cave_ambiance_1.wav<>uid://bchbub2wy48dy::::res://env/bg/tentacle_2.tscn<>uid://bkiy7xeui35gi::::res://env/bg/tentacle_3.tscn<>res://env/bg/scare_sfx.gd<>uid://wyaa1v1imu27::::res://assets/sfx/Drop 3.wav<>uid://c44eryydhytls::::res://env/lock.tscn<>uid://baxjnj4d6ij30::::res://enemy/enemy_hooded.tscn<>uid://dwghl41nawli7::::res://interactables/paper.tscn
+::res://ui/::1699727843
+chroma.gdshader::Shader::-1::1699727843::0::1::::<><>::
+hud.tscn::PackedScene::639548819744739234::1699727454::0::1::::<><>::res://ui/StaminaBar.gd<>res://ui/ui_page_viewer.gd<>res://ui/ui_lock.gd<>uid://cp5ykbufygt4o::::res://assets/ui/lock_view_2.jpg<>uid://occ7nhcv68sk::::res://assets/ui/pages/page_1.png<>uid://c3yqphcekdto4::::res://mat/text_theme.tres<>uid://b0ykvt16lmy43::::res://assets/ui/key_in_hole.png<>uid://dims1meb6fc5c::::res://assets/sfx/paper_2.mp3<>uid://tegfnh73vv0y::::res://assets/sfx/Wood Block2.wav<>uid://dyklicxq5ima4::::res://assets/sfx/lock_open.wav<>res://ui/ui_win.gd<>uid://1lbjebgumkin::::res://assets/sfx/Abstract2.wav<>uid://cgi2ryldfd735::::res://assets/sfx/key.mp3<>res://assets/ui/video/output.ogv<>res://ui/ui_lose.gd<>res://ui/chroma.gdshader<>uid://c2wcni0rfcyv6::::res://assets/enemy/horror_enemy.png<>uid://wyaa1v1imu27::::res://assets/sfx/Drop 3.wav
 load.gd::GDScript::-1::1699454639::0::1::::<>Control<>::
-load.tscn::PackedScene::2044056889523720433::1699454639::0::1::::<><>::res://ui/load.gd<>uid://c3yqphcekdto4::::res://mat/text_theme.tres
+load.tscn::PackedScene::2044056889523720433::1699727454::0::1::::<><>::res://ui/load.gd<>uid://c3yqphcekdto4::::res://mat/text_theme.tres
 StaminaBar.gd::GDScript::-1::1699281397::0::1::::<>ProgressBar<>::
-ui_lock.gd::GDScript::-1::1699282029::0::1::::<>Control<>::
+ui_lock.gd::GDScript::-1::1699631355::0::1::::<>Control<>::
 ui_lose.gd::GDScript::-1::1699454603::0::1::::<>Control<>::
-ui_page_viewer.gd::GDScript::-1::1699376293::0::1::::<>Control<>::
+ui_page_viewer.gd::GDScript::-1::1699727449::0::1::::<>Control<>::
 ui_win.gd::GDScript::-1::1699280549::0::1::::<>Control<>::

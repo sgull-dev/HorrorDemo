@@ -1,3 +1,5 @@
+AudioStreamPlayer
+CyclopsBlocks
 CSGBox3D
 CollisionShape3D
 Area3D
@@ -5,7 +7,6 @@ NavigationAgent3D
 RichTextLabel
 Timer
 ColorRect
-AudioStreamPlayer
 AudioStreamPlayer3D
 Button
 TextureRect
@@ -29,4 +30,3 @@ AnimationPlayer
 AnimationTree
 ProtonScatter
 ProgressBar
-CanvasLayer

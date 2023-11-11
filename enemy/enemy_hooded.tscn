@@ -33,11 +33,6 @@ chase_speed = 250.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_j7wao")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(0.0601289, 0, 0, 0, 0.0601289, 0, 0, 0, 0.0601289, 0, 1.0355, 0)
-visible = false
-texture = ExtResource("1_1d32f")
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25643, 0)
 mesh = SubResource("QuadMesh_t2w7a")
