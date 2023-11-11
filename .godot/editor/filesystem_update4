@@ -1,4 +1,3 @@
-res://interactables/paper.tscn
 res://addons/cyclops_level_builder/shaders/outline_shader.tres
 res://addons/cyclops_level_builder/docks/material_palette/thumbnail_selected_theme.tres
 res://addons/cyclops_level_builder/docks/material_palette/thumbnail_normal_theme.tres
@@ -8,13 +7,3 @@ res://mat/ground.tres
 res://mat/brick.tres
 res://mat/gobble.tres
 res://env/bg/tentacle_alpha.tres
-res://stages/stage_1.tscn
-res://player/player.tscn
-res://ui/hud.tscn
-res://ui/load.tscn
-res://enemy/enemy_hooded.tscn
-res://addons/proton_scatter/demos/assets/materials/m_bush.tres
-res://addons/proton_scatter/demos/assets/materials/m_grass.tres
-res://addons/proton_scatter/demos/assets/materials/m_pine_leaves.tres
-res://addons/proton_scatter/demos/assets/materials/m_water.tres
-res://player/player_sfx.gd
